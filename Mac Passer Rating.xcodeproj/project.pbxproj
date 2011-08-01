@@ -16,6 +16,10 @@
 		3318AFC913E6EFED0093280C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFC713E6EFED0093280C /* MainMenu.xib */; };
 		3318AFCC13E6EFED0093280C /* LeagueDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFCA13E6EFED0093280C /* LeagueDocument.xcdatamodeld */; };
 		3394335713E707B90000091C /* libpasser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3394335613E707B90000091C /* libpasser.a */; };
+		33E232E613E731E100E1C3F7 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E232E313E731E100E1C3F7 /* Game.m */; };
+		33E232E713E731E100E1C3F7 /* Passer.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E232E513E731E100E1C3F7 /* Passer.m */; };
+		33E232EA13E7321200E1C3F7 /* SimpleCSVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E232E913E7321200E1C3F7 /* SimpleCSVFile.m */; };
+		33E4EFAB13E72DDD002FC4D6 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E4EFAA13E72DDD002FC4D6 /* Team.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,14 @@
 		3318AFCB13E6EFED0093280C /* LeagueDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeagueDocument.xcdatamodel; sourceTree = "<group>"; };
 		3318AFFE13E6F2170093280C /* Mac Passer Rating.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Mac Passer Rating.entitlements"; sourceTree = "<group>"; };
 		3394335613E707B90000091C /* libpasser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpasser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		33E232E213E731E100E1C3F7 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = "../../Passer Rating/Passer Rating/Model/Game.h"; sourceTree = "<group>"; };
+		33E232E313E731E100E1C3F7 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = "../../Passer Rating/Passer Rating/Model/Game.m"; sourceTree = "<group>"; };
+		33E232E413E731E100E1C3F7 /* Passer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Passer.h; path = "../../Passer Rating/Passer Rating/Model/Passer.h"; sourceTree = "<group>"; };
+		33E232E513E731E100E1C3F7 /* Passer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Passer.m; path = "../../Passer Rating/Passer Rating/Model/Passer.m"; sourceTree = "<group>"; };
+		33E232E813E7321200E1C3F7 /* SimpleCSVFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleCSVFile.h; path = "../../Passer Rating/Passer Rating/SimpleCSVFile.h"; sourceTree = "<group>"; };
+		33E232E913E7321200E1C3F7 /* SimpleCSVFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleCSVFile.m; path = "../../Passer Rating/Passer Rating/SimpleCSVFile.m"; sourceTree = "<group>"; };
+		33E4EFA913E72DDD002FC4D6 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		33E4EFAA13E72DDD002FC4D6 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +103,11 @@
 		3318AFB513E6EFEC0093280C /* Mac Passer Rating */ = {
 			isa = PBXGroup;
 			children = (
+				33965CDB13E732A7008F552D /* Model */,
 				3318AFC113E6EFEC0093280C /* LeagueDocument.h */,
 				3318AFC213E6EFEC0093280C /* LeagueDocument.m */,
 				3318AFC413E6EFEC0093280C /* LeagueDocument.xib */,
 				3318AFC713E6EFED0093280C /* MainMenu.xib */,
-				3318AFCA13E6EFED0093280C /* LeagueDocument.xcdatamodeld */,
 				3318AFB613E6EFEC0093280C /* Supporting Files */,
 			);
 			path = "Mac Passer Rating";
@@ -112,6 +124,22 @@
 				3318AFBE13E6EFEC0093280C /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33965CDB13E732A7008F552D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33E232E813E7321200E1C3F7 /* SimpleCSVFile.h */,
+				33E232E913E7321200E1C3F7 /* SimpleCSVFile.m */,
+				33E232E213E731E100E1C3F7 /* Game.h */,
+				33E232E313E731E100E1C3F7 /* Game.m */,
+				33E232E413E731E100E1C3F7 /* Passer.h */,
+				33E232E513E731E100E1C3F7 /* Passer.m */,
+				33E4EFA913E72DDD002FC4D6 /* Team.h */,
+				33E4EFAA13E72DDD002FC4D6 /* Team.m */,
+				3318AFCA13E6EFED0093280C /* LeagueDocument.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +210,10 @@
 				3318AFBC13E6EFEC0093280C /* main.m in Sources */,
 				3318AFC313E6EFEC0093280C /* LeagueDocument.m in Sources */,
 				3318AFCC13E6EFED0093280C /* LeagueDocument.xcdatamodeld in Sources */,
+				33E4EFAB13E72DDD002FC4D6 /* Team.m in Sources */,
+				33E232E613E731E100E1C3F7 /* Game.m in Sources */,
+				33E232E713E731E100E1C3F7 /* Passer.m in Sources */,
+				33E232EA13E7321200E1C3F7 /* SimpleCSVFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
