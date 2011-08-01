@@ -15,6 +15,7 @@
 		3318AFC613E6EFEC0093280C /* LeagueDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFC413E6EFEC0093280C /* LeagueDocument.xib */; };
 		3318AFC913E6EFED0093280C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFC713E6EFED0093280C /* MainMenu.xib */; };
 		3318AFCC13E6EFED0093280C /* LeagueDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFCA13E6EFED0093280C /* LeagueDocument.xcdatamodeld */; };
+		3394335713E707B90000091C /* libpasser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3394335613E707B90000091C /* libpasser.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3318AFC813E6EFED0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3318AFCB13E6EFED0093280C /* LeagueDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeagueDocument.xcdatamodel; sourceTree = "<group>"; };
 		3318AFFE13E6F2170093280C /* Mac Passer Rating.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Mac Passer Rating.entitlements"; sourceTree = "<group>"; };
+		3394335613E707B90000091C /* libpasser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpasser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3394335713E707B90000091C /* libpasser.a in Frameworks */,
 				3318AFB013E6EFEC0093280C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +54,7 @@
 		3318AFA013E6EFEC0093280C = {
 			isa = PBXGroup;
 			children = (
+				3394335613E707B90000091C /* libpasser.a */,
 				3318AFB513E6EFEC0093280C /* Mac Passer Rating */,
 				3318AFAE13E6EFEC0093280C /* Frameworks */,
 				3318AFAC13E6EFEC0093280C /* Products */,
@@ -273,7 +277,12 @@
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mac Passer Rating/Mac Passer Rating-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../passer-rating/**";
 				INFOPLIST_FILE = "Mac Passer Rating/Mac Passer Rating-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/Passers-cxmcnerepomuhchhodfbgdtnuyev/Build/Products/Debug\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -286,7 +295,12 @@
 				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mac Passer Rating/Mac Passer Rating-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../passer-rating/**";
 				INFOPLIST_FILE = "Mac Passer Rating/Mac Passer Rating-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/Passers-cxmcnerepomuhchhodfbgdtnuyev/Build/Products/Debug\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

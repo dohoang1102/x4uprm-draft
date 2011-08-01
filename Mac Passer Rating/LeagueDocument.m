@@ -7,6 +7,7 @@
 //
 
 #import "LeagueDocument.h"
+#import "rating.h"
 
 @implementation LeagueDocument
 
@@ -16,6 +17,9 @@
     if (self) {
         // Add your subclass-specific initialization here.
         // If an error occurs here, return nil.
+        
+        float   rating = passer_rating(20, 40, 85, 1, 0);
+        NSLog(@"%s: rating = %f", __PRETTY_FUNCTION__, rating);
     }
     return self;
 }
