@@ -13,8 +13,15 @@
 
 @interface Team : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet *games;
+@property(nonatomic, retain) NSString *     name;
+@property(nonatomic, retain) NSSet *        games;
+@property(nonatomic, readonly) NSArray *    orderedGames;
+@property(nonatomic, readonly) NSArray *    orderedPassers;
+
++ (Team *) teamWithName: (NSString *) aName 
+              inContext: (NSManagedObjectContext *) moc
+                 create: (BOOL) doCreate;
+
 @end
 
 @interface Team (CoreDataGeneratedAccessors)
