@@ -10,4 +10,7 @@
 
 @interface LeagueDocument : NSPersistentDocument
 
+
+- (IBAction) fillWithData: (id) sender;
+
 @end

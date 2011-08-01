@@ -8,6 +8,7 @@
 
 #import "LeagueDocument.h"
 #import "rating.h"
+#import "Game.h"
 
 @implementation LeagueDocument
 
@@ -40,6 +41,18 @@
 + (BOOL)autosavesInPlace
 {
     return YES;
+}
+
+#pragma mark - IBAction
+
+- (IBAction) fillWithData: (id) sender
+{
+    NSString *  dataPath = [[NSBundle mainBundle] pathForResource: @"sample-data"
+                                                           ofType: @"csv"];
+    [Game loadFromCSVFile: dataPath
+              intoContext: self.managedObjectContext
+                    error: NULL];
+    //  TODO: Do I have to refresh? I probably do, unless the object controllers watch the MOC.
 }
 
 @end
