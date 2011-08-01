@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3318AFB013E6EFEC0093280C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3318AFAF13E6EFEC0093280C /* Cocoa.framework */; };
+		3318AFBA13E6EFEC0093280C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFB813E6EFEC0093280C /* InfoPlist.strings */; };
+		3318AFBC13E6EFEC0093280C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFBB13E6EFEC0093280C /* main.m */; };
+		3318AFC013E6EFEC0093280C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFBE13E6EFEC0093280C /* Credits.rtf */; };
+		3318AFC313E6EFEC0093280C /* LeagueDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFC213E6EFEC0093280C /* LeagueDocument.m */; };
+		3318AFC613E6EFEC0093280C /* LeagueDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFC413E6EFEC0093280C /* LeagueDocument.xib */; };
+		3318AFC913E6EFED0093280C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFC713E6EFED0093280C /* MainMenu.xib */; };
+		3318AFCC13E6EFED0093280C /* LeagueDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFCA13E6EFED0093280C /* LeagueDocument.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3318AFAB13E6EFEC0093280C /* Mac Passer Rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mac Passer Rating.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3318AFAF13E6EFEC0093280C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3318AFB213E6EFEC0093280C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3318AFB313E6EFEC0093280C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3318AFB413E6EFEC0093280C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3318AFB713E6EFEC0093280C /* Mac Passer Rating-Info.plist */ = {isa = PBXFileReference; path = "Mac Passer Rating-Info.plist"; sourceTree = "<group>"; };
+		3318AFB913E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3318AFBB13E6EFEC0093280C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3318AFBD13E6EFEC0093280C /* Mac Passer Rating-Prefix.pch */ = {isa = PBXFileReference; path = "Mac Passer Rating-Prefix.pch"; sourceTree = "<group>"; };
+		3318AFBF13E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3318AFC113E6EFEC0093280C /* LeagueDocument.h */ = {isa = PBXFileReference; path = LeagueDocument.h; sourceTree = "<group>"; };
+		3318AFC213E6EFEC0093280C /* LeagueDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeagueDocument.m; sourceTree = "<group>"; };
+		3318AFC513E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LeagueDocument.xib; sourceTree = "<group>"; };
+		3318AFC813E6EFED0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3318AFCB13E6EFED0093280C /* LeagueDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeagueDocument.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3318AFA813E6EFEC0093280C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3318AFB013E6EFEC0093280C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3318AFA013E6EFEC0093280C = {
+			isa = PBXGroup;
+			children = (
+				3318AFB513E6EFEC0093280C /* Mac Passer Rating */,
+				3318AFAE13E6EFEC0093280C /* Frameworks */,
+				3318AFAC13E6EFEC0093280C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3318AFAC13E6EFEC0093280C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3318AFAB13E6EFEC0093280C /* Mac Passer Rating.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3318AFAE13E6EFEC0093280C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3318AFAF13E6EFEC0093280C /* Cocoa.framework */,
+				3318AFB113E6EFEC0093280C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3318AFB113E6EFEC0093280C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3318AFB213E6EFEC0093280C /* AppKit.framework */,
+				3318AFB313E6EFEC0093280C /* CoreData.framework */,
+				3318AFB413E6EFEC0093280C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3318AFB513E6EFEC0093280C /* Mac Passer Rating */ = {
+			isa = PBXGroup;
+			children = (
+				3318AFC113E6EFEC0093280C /* LeagueDocument.h */,
+				3318AFC213E6EFEC0093280C /* LeagueDocument.m */,
+				3318AFC413E6EFEC0093280C /* LeagueDocument.xib */,
+				3318AFC713E6EFED0093280C /* MainMenu.xib */,
+				3318AFCA13E6EFED0093280C /* LeagueDocument.xcdatamodeld */,
+				3318AFB613E6EFEC0093280C /* Supporting Files */,
+			);
+			path = "Mac Passer Rating";
+			sourceTree = "<group>";
+		};
+		3318AFB613E6EFEC0093280C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3318AFB713E6EFEC0093280C /* Mac Passer Rating-Info.plist */,
+				3318AFB813E6EFEC0093280C /* InfoPlist.strings */,
+				3318AFBB13E6EFEC0093280C /* main.m */,
+				3318AFBD13E6EFEC0093280C /* Mac Passer Rating-Prefix.pch */,
+				3318AFBE13E6EFEC0093280C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3318AFAA13E6EFEC0093280C /* Mac Passer Rating */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3318AFCF13E6EFED0093280C /* Build configuration list for PBXNativeTarget "Mac Passer Rating" */;
+			buildPhases = (
+				3318AFA713E6EFEC0093280C /* Sources */,
+				3318AFA813E6EFEC0093280C /* Frameworks */,
+				3318AFA913E6EFEC0093280C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mac Passer Rating";
+			productName = "Mac Passer Rating";
+			productReference = 3318AFAB13E6EFEC0093280C /* Mac Passer Rating.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3318AFA213E6EFEC0093280C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3318AFA513E6EFEC0093280C /* Build configuration list for PBXProject "Mac Passer Rating" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3318AFA013E6EFEC0093280C;
+			productRefGroup = 3318AFAC13E6EFEC0093280C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3318AFAA13E6EFEC0093280C /* Mac Passer Rating */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3318AFA913E6EFEC0093280C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3318AFBA13E6EFEC0093280C /* InfoPlist.strings in Resources */,
+				3318AFC013E6EFEC0093280C /* Credits.rtf in Resources */,
+				3318AFC613E6EFEC0093280C /* LeagueDocument.xib in Resources */,
+				3318AFC913E6EFED0093280C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3318AFA713E6EFEC0093280C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3318AFBC13E6EFEC0093280C /* main.m in Sources */,
+				3318AFC313E6EFEC0093280C /* LeagueDocument.m in Sources */,
+				3318AFCC13E6EFED0093280C /* LeagueDocument.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3318AFB813E6EFEC0093280C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3318AFB913E6EFEC0093280C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3318AFBE13E6EFEC0093280C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3318AFBF13E6EFEC0093280C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3318AFC413E6EFEC0093280C /* LeagueDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3318AFC513E6EFEC0093280C /* en */,
+			);
+			name = LeagueDocument.xib;
+			sourceTree = "<group>";
+		};
+		3318AFC713E6EFED0093280C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3318AFC813E6EFED0093280C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3318AFCD13E6EFED0093280C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3318AFCE13E6EFED0093280C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3318AFD013E6EFED0093280C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mac Passer Rating/Mac Passer Rating-Prefix.pch";
+				INFOPLIST_FILE = "Mac Passer Rating/Mac Passer Rating-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3318AFD113E6EFED0093280C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mac Passer Rating/Mac Passer Rating-Prefix.pch";
+				INFOPLIST_FILE = "Mac Passer Rating/Mac Passer Rating-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3318AFA513E6EFEC0093280C /* Build configuration list for PBXProject "Mac Passer Rating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3318AFCD13E6EFED0093280C /* Debug */,
+				3318AFCE13E6EFED0093280C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3318AFCF13E6EFED0093280C /* Build configuration list for PBXNativeTarget "Mac Passer Rating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3318AFD013E6EFED0093280C /* Debug */,
+				3318AFD113E6EFED0093280C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3318AFCA13E6EFED0093280C /* LeagueDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3318AFCB13E6EFED0093280C /* LeagueDocument.xcdatamodel */,
+			);
+			currentVersion = 3318AFCB13E6EFED0093280C /* LeagueDocument.xcdatamodel */;
+			path = LeagueDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3318AFA213E6EFEC0093280C /* Project object */;
+}
