@@ -23,16 +23,17 @@
 		3318AFB213E6EFEC0093280C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3318AFB313E6EFEC0093280C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3318AFB413E6EFEC0093280C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3318AFB713E6EFEC0093280C /* Mac Passer Rating-Info.plist */ = {isa = PBXFileReference; path = "Mac Passer Rating-Info.plist"; sourceTree = "<group>"; };
+		3318AFB713E6EFEC0093280C /* Mac Passer Rating-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mac Passer Rating-Info.plist"; sourceTree = "<group>"; };
 		3318AFB913E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3318AFBB13E6EFEC0093280C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3318AFBD13E6EFEC0093280C /* Mac Passer Rating-Prefix.pch */ = {isa = PBXFileReference; path = "Mac Passer Rating-Prefix.pch"; sourceTree = "<group>"; };
+		3318AFBD13E6EFEC0093280C /* Mac Passer Rating-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mac Passer Rating-Prefix.pch"; sourceTree = "<group>"; };
 		3318AFBF13E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		3318AFC113E6EFEC0093280C /* LeagueDocument.h */ = {isa = PBXFileReference; path = LeagueDocument.h; sourceTree = "<group>"; };
+		3318AFC113E6EFEC0093280C /* LeagueDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeagueDocument.h; sourceTree = "<group>"; };
 		3318AFC213E6EFEC0093280C /* LeagueDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeagueDocument.m; sourceTree = "<group>"; };
 		3318AFC513E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LeagueDocument.xib; sourceTree = "<group>"; };
 		3318AFC813E6EFED0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3318AFCB13E6EFED0093280C /* LeagueDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeagueDocument.xcdatamodel; sourceTree = "<group>"; };
+		3318AFFE13E6F2170093280C /* Mac Passer Rating.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Mac Passer Rating.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		3318AFB613E6EFEC0093280C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3318AFFE13E6F2170093280C /* Mac Passer Rating.entitlements */,
 				3318AFB713E6EFEC0093280C /* Mac Passer Rating-Info.plist */,
 				3318AFB813E6EFEC0093280C /* InfoPlist.strings */,
 				3318AFBB13E6EFEC0093280C /* main.m */,
@@ -133,6 +135,10 @@
 /* Begin PBXProject section */
 		3318AFA213E6EFEC0093280C /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Fritz Anderson";
+			};
 			buildConfigurationList = 3318AFA513E6EFEC0093280C /* Build configuration list for PBXProject "Mac Passer Rating" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -263,6 +269,8 @@
 		3318AFD013E6EFED0093280C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Mac Passer Rating/Mac Passer Rating.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mac Passer Rating/Mac Passer Rating-Prefix.pch";
 				INFOPLIST_FILE = "Mac Passer Rating/Mac Passer Rating-Info.plist";
@@ -274,6 +282,8 @@
 		3318AFD113E6EFED0093280C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Mac Passer Rating/Mac Passer Rating.entitlements";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mac Passer Rating/Mac Passer Rating-Prefix.pch";
 				INFOPLIST_FILE = "Mac Passer Rating/Mac Passer Rating-Info.plist";
@@ -301,6 +311,7 @@
 				3318AFD113E6EFED0093280C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

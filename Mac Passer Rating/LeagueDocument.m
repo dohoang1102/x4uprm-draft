@@ -3,7 +3,7 @@
 //  Mac Passer Rating
 //
 //  Created by Xcode User on 8/1/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Fritz Anderson. All rights reserved.
 //
 
 #import "LeagueDocument.h"
