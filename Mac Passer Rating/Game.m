@@ -51,6 +51,7 @@ static NSDateFormatter *	sShortDate = nil;
 	Game *			retval;
 	retval = [NSEntityDescription insertNewObjectForEntityForName: @"Game"
 										   inManagedObjectContext: file.moc];
+    assert(retval);
 	
 	NSString *		firstName = [values objectForKey: @"firstName"];
 	NSString *		lastName = [values objectForKey: @"lastName"];
@@ -86,7 +87,6 @@ static NSDateFormatter *	sShortDate = nil;
 	SimpleCSVFile *		csv = [[SimpleCSVFile alloc] initWithPath: path];
     csv.moc = moc;
 	csv.delegate = (id<SimpleCSVDelegate>) self;
-	//	Let the caller save the MOC.
 	return [csv run: error];
 }
 

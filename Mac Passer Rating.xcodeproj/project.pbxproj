@@ -14,13 +14,13 @@
 		3318AFC313E6EFEC0093280C /* LeagueDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFC213E6EFEC0093280C /* LeagueDocument.m */; };
 		3318AFC613E6EFEC0093280C /* LeagueDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFC413E6EFEC0093280C /* LeagueDocument.xib */; };
 		3318AFC913E6EFED0093280C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFC713E6EFED0093280C /* MainMenu.xib */; };
-		3318AFCC13E6EFED0093280C /* LeagueDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFCA13E6EFED0093280C /* LeagueDocument.xcdatamodeld */; };
 		3394335713E707B90000091C /* libpasser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3394335613E707B90000091C /* libpasser.a */; };
 		33965CE013E733EA008F552D /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 33965CDD13E733EA008F552D /* Game.m */; };
 		33965CE113E733EA008F552D /* Passer.m in Sources */ = {isa = PBXBuildFile; fileRef = 33965CDF13E733EA008F552D /* Passer.m */; };
 		33965CE413E73410008F552D /* SimpleCSVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 33965CE313E73410008F552D /* SimpleCSVFile.m */; };
 		33965CE713E73801008F552D /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 33965CE613E73801008F552D /* Team.m */; };
 		33965CE913E74A99008F552D /* sample-data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33965CE813E74A99008F552D /* sample-data.csv */; };
+		33965CF113EDD62D008F552D /* LeagueDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33965CEF13EDD62D008F552D /* LeagueDocument.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,6 @@
 		3318AFC213E6EFEC0093280C /* LeagueDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeagueDocument.m; sourceTree = "<group>"; };
 		3318AFC513E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LeagueDocument.xib; sourceTree = "<group>"; };
 		3318AFC813E6EFED0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		3318AFCB13E6EFED0093280C /* LeagueDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeagueDocument.xcdatamodel; sourceTree = "<group>"; };
 		3318AFFE13E6F2170093280C /* Mac Passer Rating.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Mac Passer Rating.entitlements"; sourceTree = "<group>"; };
 		3394335613E707B90000091C /* libpasser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpasser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		33965CDC13E733EA008F552D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		33965CE513E73801008F552D /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
 		33965CE613E73801008F552D /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
 		33965CE813E74A99008F552D /* sample-data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sample-data.csv"; sourceTree = "<group>"; };
+		33965CF013EDD62D008F552D /* Passer_Rating.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Passer_Rating.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +108,7 @@
 				33965CDB13E732A7008F552D /* Model */,
 				3318AFC113E6EFEC0093280C /* LeagueDocument.h */,
 				3318AFC213E6EFEC0093280C /* LeagueDocument.m */,
+				33965CEF13EDD62D008F552D /* LeagueDocument.xcdatamodeld */,
 				3318AFC413E6EFEC0093280C /* LeagueDocument.xib */,
 				3318AFC713E6EFED0093280C /* MainMenu.xib */,
 				3318AFB613E6EFEC0093280C /* Supporting Files */,
@@ -140,7 +141,6 @@
 				33965CDF13E733EA008F552D /* Passer.m */,
 				33965CE513E73801008F552D /* Team.h */,
 				33965CE613E73801008F552D /* Team.m */,
-				3318AFCA13E6EFED0093280C /* LeagueDocument.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,11 +213,11 @@
 			files = (
 				3318AFBC13E6EFEC0093280C /* main.m in Sources */,
 				3318AFC313E6EFEC0093280C /* LeagueDocument.m in Sources */,
-				3318AFCC13E6EFED0093280C /* LeagueDocument.xcdatamodeld in Sources */,
 				33965CE013E733EA008F552D /* Game.m in Sources */,
 				33965CE113E733EA008F552D /* Passer.m in Sources */,
 				33965CE413E73410008F552D /* SimpleCSVFile.m in Sources */,
 				33965CE713E73801008F552D /* Team.m in Sources */,
+				33965CF113EDD62D008F552D /* LeagueDocument.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,12 +366,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3318AFCA13E6EFED0093280C /* LeagueDocument.xcdatamodeld */ = {
+		33965CEF13EDD62D008F552D /* LeagueDocument.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3318AFCB13E6EFED0093280C /* LeagueDocument.xcdatamodel */,
+				33965CF013EDD62D008F552D /* Passer_Rating.xcdatamodel */,
 			);
-			currentVersion = 3318AFCB13E6EFED0093280C /* LeagueDocument.xcdatamodel */;
+			currentVersion = 33965CF013EDD62D008F552D /* Passer_Rating.xcdatamodel */;
 			path = LeagueDocument.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

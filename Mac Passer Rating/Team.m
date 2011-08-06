@@ -12,7 +12,7 @@
 
 @implementation Team
 
-@dynamic name;
+@dynamic teamName;
 @dynamic games;
 
 + (Team *) teamWithName: (NSString *) aName 
@@ -22,7 +22,7 @@
     NSFetchRequest *    fetch = [[NSFetchRequest alloc] init];
     fetch.entity = [NSEntityDescription entityForName: @"Team"
                                inManagedObjectContext: moc];
-    fetch.predicate = [NSPredicate predicateWithFormat: @"name = %@",
+    fetch.predicate = [NSPredicate predicateWithFormat: @"teamName = %@",
                        aName];
     NSError *           error;
     NSArray *           result;
@@ -32,13 +32,17 @@
         return nil;
     }
     
-    if (result.count == 0 && ! doCreate)
+    if (result.count > 0)
+        return [result lastObject];
+    
+    if (! doCreate)
         return nil;
     
     Team *              retval =
         [NSEntityDescription insertNewObjectForEntityForName: @"Team"
                                       inManagedObjectContext:moc];
-    retval.name = aName;
+    assert(retval);
+    retval.teamName = aName;
     return retval;
 }
 
@@ -59,6 +63,18 @@
         [set addObject: game.passer];
     }
     return set.array;
+}
+
+- (NSUInteger) ownTotalScore
+{
+    NSNumber *      total = [self.games valueForKeyPath: @"@sum.ourScore"];
+    return total.unsignedIntegerValue;
+}
+
+- (NSUInteger) oppTotalScore
+{
+    NSNumber *      total = [self.games valueForKeyPath: @"@sum.theirScore"];
+    return total.unsignedIntegerValue;
 }
 
 @end

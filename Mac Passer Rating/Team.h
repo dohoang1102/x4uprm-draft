@@ -13,10 +13,13 @@
 
 @interface Team : NSManagedObject
 
-@property(nonatomic, retain) NSString *     name;
+@property(nonatomic, retain) NSString *     teamName;
 @property(nonatomic, retain) NSSet *        games;
 @property(nonatomic, readonly) NSArray *    orderedGames;
 @property(nonatomic, readonly) NSArray *    orderedPassers;
+
+@property(nonatomic, readonly) NSUInteger   ownTotalScore;
+@property(nonatomic, readonly) NSUInteger   oppTotalScore;
 
 + (Team *) teamWithName: (NSString *) aName 
               inContext: (NSManagedObjectContext *) moc

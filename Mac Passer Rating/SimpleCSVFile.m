@@ -58,7 +58,8 @@ NSString * const		kCSVActualFieldsKey = @"kCSVActualFieldsKey";
 
 - (BOOL) run: (NSError **) error
 {
-	*error = nil;
+    if (error)
+        *error = nil;
 	
 	NSString *	contents = [NSString stringWithContentsOfFile: self.path
 													encoding: NSUTF8StringEncoding

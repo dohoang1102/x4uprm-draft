@@ -63,6 +63,7 @@ static NSMutableDictionary *   sAllPassers;
 		retval = [NSEntityDescription
 				  insertNewObjectForEntityForName: @"Passer"
                   inManagedObjectContext: moc];
+        assert(retval);
 		retval.firstName = first;
 		retval.lastName = last;
         

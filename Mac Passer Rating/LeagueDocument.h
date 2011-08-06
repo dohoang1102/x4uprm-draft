@@ -8,9 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface LeagueDocument : NSPersistentDocument
+@interface LeagueDocument : NSPersistentDocument {
+    NSArrayController *teamArrayController;
+}
+
 
 
 - (IBAction) fillWithData: (id) sender;
+@property (strong) IBOutlet NSArrayController *teamArrayController;
 
 @end

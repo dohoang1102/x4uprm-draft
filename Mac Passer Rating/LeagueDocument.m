@@ -11,6 +11,7 @@
 #import "Game.h"
 
 @implementation LeagueDocument
+@synthesize teamArrayController;
 
 - (id)init
 {
@@ -18,9 +19,6 @@
     if (self) {
         // Add your subclass-specific initialization here.
         // If an error occurs here, return nil.
-        
-        float   rating = passer_rating(20, 40, 85, 1, 0);
-        NSLog(@"%s: rating = %f", __PRETTY_FUNCTION__, rating);
     }
     return self;
 }
@@ -53,6 +51,16 @@
               intoContext: self.managedObjectContext
                     error: NULL];
     //  TODO: Do I have to refresh? I probably do, unless the object controllers watch the MOC.
+}
+
+- (IBAction) changeName: (id) sender
+{
+    id          selection = [self.teamArrayController selection];
+    NSString *  oldName = [selection valueForKey: @"teamName"];
+    if (oldName != NSNoSelectionMarker) {
+        NSString *      newName = [oldName stringByAppendingString: @" CHANGED"];
+        [selection setValue: newName forKey: @"teamName"];
+    }
 }
 
 @end
