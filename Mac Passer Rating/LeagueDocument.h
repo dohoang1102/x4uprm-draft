@@ -10,11 +10,15 @@
 
 @interface LeagueDocument : NSPersistentDocument {
     NSArrayController *teamArrayController;
+    NSArrayController *passerArrayController;
+    NSArrayController *gameArrayController;
 }
 
 
 
 - (IBAction) fillWithData: (id) sender;
 @property (strong) IBOutlet NSArrayController *teamArrayController;
+@property (strong) IBOutlet NSArrayController *passerArrayController;
+@property (strong) IBOutlet NSArrayController *gameArrayController;
 
 @end

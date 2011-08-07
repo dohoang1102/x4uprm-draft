@@ -12,6 +12,8 @@
 
 @implementation LeagueDocument
 @synthesize teamArrayController;
+@synthesize passerArrayController;
+@synthesize gameArrayController;
 
 - (id)init
 {
@@ -37,6 +39,18 @@
     self.teamArrayController.sortDescriptors =
         [NSArray arrayWithObject:
              [NSSortDescriptor sortDescriptorWithKey: @"teamName"
+                                           ascending: YES]];
+    self.passerArrayController.sortDescriptors =
+        [NSArray arrayWithObjects:
+             [NSSortDescriptor sortDescriptorWithKey: @"lastName" 
+                                           ascending: YES],
+             [NSSortDescriptor sortDescriptorWithKey: @"firstName" 
+                                           ascending: YES],
+             nil];
+    
+    self.gameArrayController.sortDescriptors =
+        [NSArray arrayWithObject:
+             [NSSortDescriptor sortDescriptorWithKey: @"whenPlayed" 
                                            ascending: YES]];
 }
 
