@@ -309,8 +309,6 @@
 		3318AFD013E6EFED0093280C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Mac Passer Rating/Mac Passer Rating.entitlements";
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mac Passer Rating/Mac Passer Rating-Prefix.pch";
 				HEADER_SEARCH_PATHS = "../passer-rating/**";
@@ -327,8 +325,6 @@
 		3318AFD113E6EFED0093280C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Mac Passer Rating/Mac Passer Rating.entitlements";
-				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Mac Passer Rating/Mac Passer Rating-Prefix.pch";
 				HEADER_SEARCH_PATHS = "../passer-rating/**";
