@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3317A9B713EF57A000948520 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317A9B513EF57A000948520 /* GameViewController.m */; };
+		3317A9B813EF57A000948520 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3317A9B613EF57A000948520 /* GameViewController.xib */; };
 		3318AFB013E6EFEC0093280C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3318AFAF13E6EFEC0093280C /* Cocoa.framework */; };
 		3318AFBA13E6EFEC0093280C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFB813E6EFEC0093280C /* InfoPlist.strings */; };
 		3318AFBC13E6EFEC0093280C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFBB13E6EFEC0093280C /* main.m */; };
@@ -24,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3317A9B413EF57A000948520 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		3317A9B513EF57A000948520 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		3317A9B613EF57A000948520 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		3318AFAB13E6EFEC0093280C /* Mac Passer Rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mac Passer Rating.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3318AFAF13E6EFEC0093280C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3318AFB213E6EFEC0093280C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -105,6 +110,9 @@
 		3318AFB513E6EFEC0093280C /* Mac Passer Rating */ = {
 			isa = PBXGroup;
 			children = (
+				3317A9B413EF57A000948520 /* GameViewController.h */,
+				3317A9B513EF57A000948520 /* GameViewController.m */,
+				3317A9B613EF57A000948520 /* GameViewController.xib */,
 				33965CDB13E732A7008F552D /* Model */,
 				3318AFC113E6EFEC0093280C /* LeagueDocument.h */,
 				3318AFC213E6EFEC0093280C /* LeagueDocument.m */,
@@ -201,6 +209,7 @@
 				3318AFC613E6EFEC0093280C /* LeagueDocument.xib in Resources */,
 				3318AFC913E6EFED0093280C /* MainMenu.xib in Resources */,
 				33965CE913E74A99008F552D /* sample-data.csv in Resources */,
+				3317A9B813EF57A000948520 /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +227,7 @@
 				33965CE413E73410008F552D /* SimpleCSVFile.m in Sources */,
 				33965CE713E73801008F552D /* Team.m in Sources */,
 				33965CF113EDD62D008F552D /* LeagueDocument.xcdatamodeld in Sources */,
+				3317A9B713EF57A000948520 /* GameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
