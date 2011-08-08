@@ -9,11 +9,18 @@
 #import "LeagueDocument.h"
 #import "rating.h"
 #import "Game.h"
+#import "GameViewController.h"
+
+@interface LeagueDocument ()
+@property(strong) NSPopover *   gamePopover;
+@end
 
 @implementation LeagueDocument
 @synthesize teamArrayController;
 @synthesize passerArrayController;
 @synthesize gameArrayController;
+@synthesize gameTable;
+@synthesize gamePopover;
 
 - (id)init
 {
@@ -79,6 +86,26 @@
         NSString *      newName = [oldName stringByAppendingString: @" CHANGED"];
         [selection setValue: newName forKey: @"teamName"];
     }
+}
+
+#pragma mark - NSTableViewDelegate
+
+- (BOOL) tableView:(NSTableView *)tableView shouldSelectRow:(NSInteger)row
+{
+    if (tableView == self.gameTable) {
+        [self.gamePopover performClose: nil];
+        id      game = [self.gameArrayController.arrangedObjects objectAtIndex: row];
+        GameViewController *    gvc = [[GameViewController alloc] initWithNibName: nil
+                                                                           bundle: nil];
+        gvc.representedObject = game;
+        self.gamePopover = [[NSPopover alloc] init];
+        self.gamePopover.contentViewController = gvc;
+        self.gamePopover.behavior = NSPopoverBehaviorTransient;
+        NSRect                  rowRect = [tableView rectOfRow: row];
+        [self.gamePopover showRelativeToRect: rowRect ofView: tableView preferredEdge: NSMaxXEdge];
+        return YES;
+    }
+    return YES;
 }
 
 @end

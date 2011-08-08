@@ -8,10 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface LeagueDocument : NSPersistentDocument {
+@interface LeagueDocument : NSPersistentDocument
+<NSTabViewDelegate>
+{
     NSArrayController *teamArrayController;
     NSArrayController *passerArrayController;
     NSArrayController *gameArrayController;
+    NSTableView *gameTable;
 }
 
 
@@ -20,5 +23,6 @@
 @property (strong) IBOutlet NSArrayController *teamArrayController;
 @property (strong) IBOutlet NSArrayController *passerArrayController;
 @property (strong) IBOutlet NSArrayController *gameArrayController;
+@property (strong) IBOutlet NSTableView *gameTable;
 
 @end

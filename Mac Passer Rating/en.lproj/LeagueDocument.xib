@@ -3,12 +3,12 @@
 	<data>
 		<int key="IBDocument.SystemTarget">1070</int>
 		<string key="IBDocument.SystemVersion">11A511</string>
-		<string key="IBDocument.InterfaceBuilderVersion">1900</string>
+		<string key="IBDocument.InterfaceBuilderVersion">1910</string>
 		<string key="IBDocument.AppKitVersion">1138</string>
 		<string key="IBDocument.HIToolboxVersion">566.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">1900</string>
+			<string key="NS.object.0">1910</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>NSNumberFormatter</string>
@@ -1249,19 +1249,51 @@
 			<array class="NSMutableArray" key="connectionRecords">
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="275939982"/>
-						<reference key="destination" ref="512844837"/>
-					</object>
-					<int key="connectionID">17</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">window</string>
 						<reference key="source" ref="512844837"/>
 						<reference key="destination" ref="275939982"/>
 					</object>
 					<int key="connectionID">18</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">teamArrayController</string>
+						<reference key="source" ref="512844837"/>
+						<reference key="destination" ref="677270799"/>
+					</object>
+					<int key="connectionID">100119</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">passerArrayController</string>
+						<reference key="source" ref="512844837"/>
+						<reference key="destination" ref="283440456"/>
+					</object>
+					<int key="connectionID">100188</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">gameArrayController</string>
+						<reference key="source" ref="512844837"/>
+						<reference key="destination" ref="704164575"/>
+					</object>
+					<int key="connectionID">100189</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">gameTable</string>
+						<reference key="source" ref="512844837"/>
+						<reference key="destination" ref="157757597"/>
+					</object>
+					<int key="connectionID">100191</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="275939982"/>
+						<reference key="destination" ref="512844837"/>
+					</object>
+					<int key="connectionID">17</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1281,15 +1313,15 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: arrangedObjects.oppTotalScore</string>
-						<reference key="source" ref="40235817"/>
+						<string key="label">value: arrangedObjects.teamName</string>
+						<reference key="source" ref="423965599"/>
 						<reference key="destination" ref="677270799"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="40235817"/>
+							<reference key="NSSource" ref="423965599"/>
 							<reference key="NSDestination" ref="677270799"/>
-							<string key="NSLabel">value: arrangedObjects.oppTotalScore</string>
+							<string key="NSLabel">value: arrangedObjects.teamName</string>
 							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">arrangedObjects.oppTotalScore</string>
+							<string key="NSKeyPath">arrangedObjects.teamName</string>
 							<dictionary key="NSOptions">
 								<boolean value="NO" key="NSAllowsEditingMultipleValuesSelection"/>
 								<boolean value="NO" key="NSConditionallySetsEditable"/>
@@ -1297,7 +1329,7 @@
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">100066</int>
+					<int key="connectionID">100120</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1318,6 +1350,26 @@
 						</object>
 					</object>
 					<int key="connectionID">100068</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: arrangedObjects.oppTotalScore</string>
+						<reference key="source" ref="40235817"/>
+						<reference key="destination" ref="677270799"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="40235817"/>
+							<reference key="NSDestination" ref="677270799"/>
+							<string key="NSLabel">value: arrangedObjects.oppTotalScore</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">arrangedObjects.oppTotalScore</string>
+							<dictionary key="NSOptions">
+								<boolean value="NO" key="NSAllowsEditingMultipleValuesSelection"/>
+								<boolean value="NO" key="NSConditionallySetsEditable"/>
+							</dictionary>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">100066</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1492,32 +1544,24 @@
 					<int key="connectionID">100117</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">teamArrayController</string>
-						<reference key="source" ref="512844837"/>
-						<reference key="destination" ref="677270799"/>
-					</object>
-					<int key="connectionID">100119</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: arrangedObjects.teamName</string>
-						<reference key="source" ref="423965599"/>
+						<string key="label">displayPatternValue1: selection.teamName</string>
+						<reference key="source" ref="868681369"/>
 						<reference key="destination" ref="677270799"/>
 						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="423965599"/>
+							<reference key="NSSource" ref="868681369"/>
 							<reference key="NSDestination" ref="677270799"/>
-							<string key="NSLabel">value: arrangedObjects.teamName</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">arrangedObjects.teamName</string>
-							<dictionary key="NSOptions">
-								<boolean value="NO" key="NSAllowsEditingMultipleValuesSelection"/>
-								<boolean value="NO" key="NSConditionallySetsEditable"/>
-							</dictionary>
+							<string key="NSLabel">displayPatternValue1: selection.teamName</string>
+							<string key="NSBinding">displayPatternValue1</string>
+							<string key="NSKeyPath">selection.teamName</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSDisplayPattern</string>
+								<string key="NS.object.0">Passers for the %{value1}@</string>
+							</object>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">100120</int>
+					<int key="connectionID">100127</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1538,26 +1582,6 @@
 						</object>
 					</object>
 					<int key="connectionID">100124</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.teamName</string>
-						<reference key="source" ref="868681369"/>
-						<reference key="destination" ref="677270799"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="868681369"/>
-							<reference key="NSDestination" ref="677270799"/>
-							<string key="NSLabel">displayPatternValue1: selection.teamName</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.teamName</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">Passers for the %{value1}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">100127</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1631,6 +1655,14 @@
 						</object>
 					</object>
 					<int key="connectionID">100159</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="157757597"/>
+						<reference key="destination" ref="512844837"/>
+					</object>
+					<int key="connectionID">100190</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1716,22 +1748,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: arrangedObjects.passerRating</string>
-						<reference key="source" ref="472150276"/>
-						<reference key="destination" ref="704164575"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="472150276"/>
-							<reference key="NSDestination" ref="704164575"/>
-							<string key="NSLabel">value: arrangedObjects.passerRating</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">arrangedObjects.passerRating</string>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">100186</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: arrangedObjects.whenPlayed</string>
 						<reference key="source" ref="187620403"/>
 						<reference key="destination" ref="704164575"/>
@@ -1747,20 +1763,20 @@
 					<int key="connectionID">100187</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">passerArrayController</string>
-						<reference key="source" ref="512844837"/>
-						<reference key="destination" ref="283440456"/>
-					</object>
-					<int key="connectionID">100188</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">gameArrayController</string>
-						<reference key="source" ref="512844837"/>
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">value: arrangedObjects.passerRating</string>
+						<reference key="source" ref="472150276"/>
 						<reference key="destination" ref="704164575"/>
+						<object class="NSNibBindingConnector" key="connector">
+							<reference key="NSSource" ref="472150276"/>
+							<reference key="NSDestination" ref="704164575"/>
+							<string key="NSLabel">value: arrangedObjects.passerRating</string>
+							<string key="NSBinding">value</string>
+							<string key="NSKeyPath">arrangedObjects.passerRating</string>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
 					</object>
-					<int key="connectionID">100189</int>
+					<int key="connectionID">100186</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2324,7 +2340,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">100189</int>
+			<int key="maxID">100191</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2344,6 +2360,7 @@
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="gameArrayController">NSArrayController</string>
+						<string key="gameTable">NSTableView</string>
 						<string key="passerArrayController">NSArrayController</string>
 						<string key="teamArrayController">NSArrayController</string>
 					</dictionary>
@@ -2351,6 +2368,10 @@
 						<object class="IBToOneOutletInfo" key="gameArrayController">
 							<string key="name">gameArrayController</string>
 							<string key="candidateClassName">NSArrayController</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="gameTable">
+							<string key="name">gameTable</string>
+							<string key="candidateClassName">NSTableView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="passerArrayController">
 							<string key="name">passerArrayController</string>
@@ -2414,10 +2435,6 @@
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.macosx</string>
 			<real value="1070" key="NS.object.0"/>
-		</object>
-		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.macosx</string>
-			<real value="0.0" key="NS.object.0"/>
 		</object>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.InterfaceBuilder3</string>

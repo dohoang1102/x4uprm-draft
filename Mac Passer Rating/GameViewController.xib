@@ -801,23 +801,19 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.ourTeam</string>
+						<string key="label">value: selection.ourTeam</string>
 						<reference key="source" ref="790874360"/>
 						<reference key="destination" ref="442386476"/>
 						<object class="NSNibBindingConnector" key="connector">
 							<reference key="NSSource" ref="790874360"/>
 							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.ourTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
+							<string key="NSLabel">value: selection.ourTeam</string>
+							<string key="NSBinding">value</string>
 							<string key="NSKeyPath">selection.ourTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@</string>
-							</object>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">95</int>
+					<int key="connectionID">116</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -833,7 +829,7 @@
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">106</int>
+					<int key="connectionID">118</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -869,252 +865,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.theirTeam</string>
-						<reference key="source" ref="183716142"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector" id="640428782">
-							<reference key="NSSource" ref="183716142"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.theirTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.theirTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">43</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue2: selection.theirScore</string>
-						<reference key="source" ref="183716142"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="183716142"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue2: selection.theirScore</string>
-							<string key="NSBinding">displayPatternValue2</string>
-							<string key="NSKeyPath">selection.theirScore</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<reference key="NSPreviousConnector" ref="640428782"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">44</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.theirTeam</string>
-						<reference key="source" ref="27463315"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector" id="311605472">
-							<reference key="NSSource" ref="27463315"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.theirTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.theirTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">47</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue2: selection.theirScore</string>
-						<reference key="source" ref="27463315"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="27463315"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue2: selection.theirScore</string>
-							<string key="NSBinding">displayPatternValue2</string>
-							<string key="NSKeyPath">selection.theirScore</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<reference key="NSPreviousConnector" ref="311605472"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">48</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.theirTeam</string>
-						<reference key="source" ref="139296783"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector" id="145529079">
-							<reference key="NSSource" ref="139296783"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.theirTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.theirTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">51</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue2: selection.theirScore</string>
-						<reference key="source" ref="139296783"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="139296783"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue2: selection.theirScore</string>
-							<string key="NSBinding">displayPatternValue2</string>
-							<string key="NSKeyPath">selection.theirScore</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<reference key="NSPreviousConnector" ref="145529079"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">52</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.theirTeam</string>
-						<reference key="source" ref="827718591"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector" id="220752068">
-							<reference key="NSSource" ref="827718591"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.theirTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.theirTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">55</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue2: selection.theirScore</string>
-						<reference key="source" ref="827718591"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="827718591"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue2: selection.theirScore</string>
-							<string key="NSBinding">displayPatternValue2</string>
-							<string key="NSKeyPath">selection.theirScore</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<reference key="NSPreviousConnector" ref="220752068"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">56</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.theirTeam</string>
-						<reference key="source" ref="772768763"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector" id="103667583">
-							<reference key="NSSource" ref="772768763"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.theirTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.theirTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">59</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue2: selection.theirScore</string>
-						<reference key="source" ref="772768763"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="772768763"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue2: selection.theirScore</string>
-							<string key="NSBinding">displayPatternValue2</string>
-							<string key="NSKeyPath">selection.theirScore</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<reference key="NSPreviousConnector" ref="103667583"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">60</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.theirTeam</string>
-						<reference key="source" ref="568716619"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector" id="865120580">
-							<reference key="NSSource" ref="568716619"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.theirTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.theirTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">67</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue2: selection.theirScore</string>
-						<reference key="source" ref="568716619"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="568716619"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue2: selection.theirScore</string>
-							<string key="NSBinding">displayPatternValue2</string>
-							<string key="NSKeyPath">selection.theirScore</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<reference key="NSPreviousConnector" ref="865120580"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">68</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: selection.attempts</string>
 						<reference key="source" ref="568716619"/>
 						<reference key="destination" ref="442386476"/>
@@ -1128,47 +878,6 @@
 						</object>
 					</object>
 					<int key="connectionID">108</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.theirTeam</string>
-						<reference key="source" ref="617753567"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector" id="936856404">
-							<reference key="NSSource" ref="617753567"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.theirTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.theirTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">71</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue2: selection.theirScore</string>
-						<reference key="source" ref="617753567"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="617753567"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue2: selection.theirScore</string>
-							<string key="NSBinding">displayPatternValue2</string>
-							<string key="NSKeyPath">selection.theirScore</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<reference key="NSPreviousConnector" ref="936856404"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">72</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1188,47 +897,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.theirTeam</string>
-						<reference key="source" ref="302103552"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector" id="642926375">
-							<reference key="NSSource" ref="302103552"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.theirTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.theirTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">75</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue2: selection.theirScore</string>
-						<reference key="source" ref="302103552"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="302103552"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue2: selection.theirScore</string>
-							<string key="NSBinding">displayPatternValue2</string>
-							<string key="NSKeyPath">selection.theirScore</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<reference key="NSPreviousConnector" ref="642926375"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">76</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: selection.yards</string>
 						<reference key="source" ref="302103552"/>
 						<reference key="destination" ref="442386476"/>
@@ -1245,47 +913,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.theirTeam</string>
-						<reference key="source" ref="610562949"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector" id="472170116">
-							<reference key="NSSource" ref="610562949"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.theirTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.theirTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">79</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue2: selection.theirScore</string>
-						<reference key="source" ref="610562949"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="610562949"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue2: selection.theirScore</string>
-							<string key="NSBinding">displayPatternValue2</string>
-							<string key="NSKeyPath">selection.theirScore</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<reference key="NSPreviousConnector" ref="472170116"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">80</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: selection.touchdowns</string>
 						<reference key="source" ref="610562949"/>
 						<reference key="destination" ref="442386476"/>
@@ -1299,47 +926,6 @@
 						</object>
 					</object>
 					<int key="connectionID">111</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue1: selection.theirTeam</string>
-						<reference key="source" ref="640109741"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector" id="968368120">
-							<reference key="NSSource" ref="640109741"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue1: selection.theirTeam</string>
-							<string key="NSBinding">displayPatternValue1</string>
-							<string key="NSKeyPath">selection.theirTeam</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">83</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBBindingConnection" key="connection">
-						<string key="label">displayPatternValue2: selection.theirScore</string>
-						<reference key="source" ref="640109741"/>
-						<reference key="destination" ref="442386476"/>
-						<object class="NSNibBindingConnector" key="connector">
-							<reference key="NSSource" ref="640109741"/>
-							<reference key="NSDestination" ref="442386476"/>
-							<string key="NSLabel">displayPatternValue2: selection.theirScore</string>
-							<string key="NSBinding">displayPatternValue2</string>
-							<string key="NSKeyPath">selection.theirScore</string>
-							<object class="NSDictionary" key="NSOptions">
-								<string key="NS.key.0">NSDisplayPattern</string>
-								<string key="NS.object.0">%{value1}@ - %{value2}@</string>
-							</object>
-							<reference key="NSPreviousConnector" ref="968368120"/>
-							<int key="NSNibBindingConnectorVersion">2</int>
-						</object>
-					</object>
-					<int key="connectionID">84</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -1751,7 +1337,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">112</int>
+			<int key="maxID">118</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
