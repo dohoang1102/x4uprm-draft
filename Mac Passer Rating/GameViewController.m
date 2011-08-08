@@ -10,8 +10,16 @@
 
 @implementation GameViewController
 
-@synthesize game;
 @synthesize objectController;
+@synthesize ourTeamLabel;
+@synthesize theirTeamLabel;
+@synthesize ourScoreLabel;
+@synthesize theirScoreLabel;
+@synthesize attemptsLabel;
+@synthesize completionsLabel;
+@synthesize yardsLabel;
+@synthesize touchdownsLabel;
+@synthesize interceptionsLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
