@@ -24,8 +24,8 @@
         <relationship name="games" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Game" inverseName="team" inverseEntity="Game"/>
     </entity>
     <elements>
-        <element name="Game" positionX="135" positionY="0" width="128" height="210"/>
-        <element name="Passer" positionX="-54" positionY="-18" width="128" height="105"/>
-        <element name="Team" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Game" positionX="142" positionY="0" width="128" height="210"/>
+        <element name="Passer" positionX="-54" positionY="45" width="128" height="105"/>
+        <element name="Team" positionX="333" positionY="60" width="128" height="75"/>
     </elements>
 </model>

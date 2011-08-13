@@ -35,6 +35,7 @@ static NSMutableDictionary *   sAllPassers;
 
 + (NSArray *) existingPassersWithLastName: (NSString *) last
 								firstName: (NSString *) first
+								inContext: (NSManagedObjectContext *) moc
 {
 	NSParameterAssert(last && last.length > 0);
 	NSParameterAssert(first && first.length > 0);
@@ -55,7 +56,8 @@ static NSMutableDictionary *   sAllPassers;
                       inContext: (NSManagedObjectContext *) moc
 {
 	NSArray *			result = [self existingPassersWithLastName: last
-                                                 firstName: first];
+                                                 firstName: first
+                                                 inContext: moc];
 	if (result.count > 0)
 		return result.lastObject;
 	else {
@@ -216,7 +218,8 @@ static NSMutableDictionary *   sAllPassers;
 {
 	NSArray *		passers = 
     [Passer existingPassersWithLastName: [values objectForKey: @"lastName"]
-                              firstName: [values objectForKey: @"firstName"]];
+                              firstName: [values objectForKey: @"firstName"]
+                              inContext: file.moc];
 	for (Passer * passer in passers) {
 		if ([passer.currentTeam isEqualToString: [values objectForKey: @"ourTeam"]])
 			[file.moc deleteObject: passer];
