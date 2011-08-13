@@ -20,7 +20,6 @@
 @property (nonatomic, retain) NSDate * whenPlayed;
 @property (nonatomic, retain) NSNumber * touchdowns;
 @property (nonatomic, retain) NSNumber * theirScore;
-@property (nonatomic, retain) NSString * ourTeam;
 @property (nonatomic, retain) NSNumber * completions;
 @property (nonatomic, retain) NSNumber * attempts;
 @property (nonatomic, retain) NSNumber * interceptions;

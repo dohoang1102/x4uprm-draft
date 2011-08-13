@@ -20,7 +20,6 @@ static NSDateFormatter *	sShortDate = nil;
 @dynamic theirScore;
 @dynamic touchdowns;
 @dynamic completions;
-@dynamic ourTeam;
 @dynamic ourScore;
 @dynamic yards;
 @dynamic attempts;
@@ -62,7 +61,13 @@ static NSDateFormatter *	sShortDate = nil;
 			  __PRETTY_FUNCTION__, firstName, lastName);
 	
 	retval.passer = passer;
-	passer.currentTeam = [values objectForKey: @"ourTeam"];
+    
+    NSString *      teamName = [values objectForKey: @"ourTeam"];
+    retval.team = [Team teamWithName: teamName
+                           inContext: file.moc
+                              create: YES];
+
+	passer.currentTeam = teamName;
 	
 	for (NSString * key in [self numericAttributes]) {
 		NSString *		datum = [values objectForKey: key];
@@ -70,13 +75,9 @@ static NSDateFormatter *	sShortDate = nil;
 		[retval setValue: [NSNumber numberWithInt: datum.intValue]
 				  forKey: key];
 	}
-	retval.ourTeam = [values objectForKey: @"ourTeam"];
 	retval.theirTeam = [values objectForKey: @"theirTeam"];
 	retval.whenPlayed = [sDateFormat dateFromString:
 						 [values objectForKey: @"whenPlayed"]];
-    retval.team = [Team teamWithName: retval.ourTeam
-                           inContext: file.moc
-                              create: YES];
 	return YES;
 }
 
@@ -120,7 +121,7 @@ static NSDateFormatter *	sShortDate = nil;
     dispatch_once(&onceToken, ^{
         sAllAttributes = [[NSArray alloc] initWithObjects:
 						  @"whenPlayed", @"theirTeam",  @"theirScore",
-						  @"touchdowns", @"completions", @"ourTeam",
+						  @"touchdowns", @"completions",
 						  @"ourScore", @"yards", @"attempts",
 						  @"interceptions", nil];
     });
@@ -167,7 +168,7 @@ static NSDateFormatter *	sShortDate = nil;
 		[retval setObject: str forKey: key];		
 	}
 	[retval setObject: self.theirTeam forKey: @"theirTeam"];
-	[retval setObject: self.ourTeam forKey: @"ourTeam"];
+	[retval setObject: self.team.teamName forKey: @"ourTeam"];
 	[retval setObject: [sShortDate stringFromDate: self.whenPlayed]
 			   forKey: @"whenPlayed"];
 	
@@ -181,7 +182,9 @@ static NSDateFormatter *	sShortDate = nil;
 				forKey: key];
 	}
 	self.theirTeam = [aDict objectForKey: @"theirTeam"];
-	self.ourTeam = [aDict objectForKey: @"ourTeam"];
+    self.team = [Team teamWithName: [aDict objectForKey: @"ourTeam"]
+                         inContext: self.managedObjectContext
+                            create: YES];
 	self.whenPlayed = [sShortDate dateFromString: [aDict objectForKey: @"whenPlayed"]];
 }
 

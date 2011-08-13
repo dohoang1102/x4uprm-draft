@@ -157,7 +157,7 @@ static NSMutableDictionary *   sAllPassers;
 
 - (NSArray *) teams
 {
-	return [[self.games valueForKeyPath: @"@distinctUnionOfObjects.ourTeam"] allObjects];
+	return [[self.games valueForKeyPath: @"@distinctUnionOfObjects.team.teamName"] allObjects];
 }
 
 #pragma mark -

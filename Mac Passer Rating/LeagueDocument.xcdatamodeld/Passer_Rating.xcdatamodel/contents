@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="851" systemVersion="11A511" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="858" systemVersion="11A511" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Game" representedClassName="Game">
-        <attribute name="attempts" attributeType="Integer 32" minValueString="0" defaultValueString="0"/>
-        <attribute name="completions" attributeType="Integer 32" minValueString="0" defaultValueString="0"/>
-        <attribute name="interceptions" attributeType="Integer 32" minValueString="0" defaultValueString="0"/>
-        <attribute name="ourScore" attributeType="Integer 32" minValueString="0" defaultValueString="0"/>
-        <attribute name="ourTeam" attributeType="String"/>
-        <attribute name="theirScore" attributeType="Integer 32" minValueString="0" defaultValueString="0"/>
+        <attribute name="attempts" attributeType="Integer 32" defaultValueString="0"/>
+        <attribute name="completions" attributeType="Integer 32" defaultValueString="0"/>
+        <attribute name="interceptions" attributeType="Integer 32" defaultValueString="0"/>
+        <attribute name="ourScore" attributeType="Integer 32" defaultValueString="0"/>
+        <attribute name="theirScore" attributeType="Integer 32" defaultValueString="0"/>
         <attribute name="theirTeam" optional="YES" attributeType="String"/>
-        <attribute name="touchdowns" attributeType="Integer 32" minValueString="0" defaultValueString="0"/>
+        <attribute name="touchdowns" attributeType="Integer 32" defaultValueString="0"/>
         <attribute name="whenPlayed" attributeType="Date" indexed="YES"/>
-        <attribute name="yards" attributeType="Integer 32" minValueString="0" defaultValueString="0"/>
+        <attribute name="yards" attributeType="Integer 32" defaultValueString="0"/>
         <relationship name="passer" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Passer" inverseName="games" inverseEntity="Passer" indexed="YES"/>
         <relationship name="team" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="games" inverseEntity="Team"/>
     </entity>
