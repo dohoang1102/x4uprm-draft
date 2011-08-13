@@ -25,4 +25,5 @@
 @property (strong) IBOutlet NSArrayController *gameArrayController;
 @property (strong) IBOutlet NSTableView *gameTable;
 
+- (IBAction) gameTableClicked: (id) sender;
 @end

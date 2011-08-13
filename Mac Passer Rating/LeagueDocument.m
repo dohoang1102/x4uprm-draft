@@ -89,22 +89,25 @@
 
 #pragma mark - NSTableViewDelegate
 
-- (BOOL) tableView:(NSTableView *)tableView shouldSelectRow:(NSInteger)row
+- (void) showPopoverForRow: (NSInteger) aRow
 {
-    if (tableView == self.gameTable) {
-        [self.gamePopover performClose: nil];
-        id      game = [self.gameArrayController.arrangedObjects objectAtIndex: row];
-        GameViewController *    gvc = [[GameViewController alloc] initWithNibName: nil
-                                                                           bundle: nil];
-        gvc.representedObject = game;
-        self.gamePopover = [[NSPopover alloc] init];
-        self.gamePopover.contentViewController = gvc;
-        self.gamePopover.behavior = NSPopoverBehaviorTransient;
-        NSRect                  rowRect = [tableView rectOfRow: row];
-        [self.gamePopover showRelativeToRect: rowRect ofView: tableView preferredEdge: NSMaxXEdge];
-        return YES;
-    }
-    return YES;
+    if (aRow < 0)
+        return;
+    
+    [self.gamePopover performClose: nil];
+    GameViewController *    gvc = [[GameViewController alloc] initWithNibName: nil
+                                                                       bundle: nil];
+    id      aGame = [self.gameArrayController.arrangedObjects objectAtIndex: aRow];
+    gvc.representedObject = aGame;
+    self.gamePopover = [[NSPopover alloc] init];
+    self.gamePopover.contentViewController = gvc;
+    self.gamePopover.behavior = NSPopoverBehaviorTransient;
+    NSRect                  rowRect = [self.gameTable rectOfRow: aRow];
+    [self.gamePopover showRelativeToRect: rowRect ofView: self.gameTable preferredEdge: NSMaxXEdge];
 }
 
+- (IBAction) gameTableClicked: (id) sender
+{
+    [self showPopoverForRow: self.gameTable.clickedRow];
+}
 @end
