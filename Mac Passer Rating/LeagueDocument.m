@@ -75,7 +75,6 @@
     [Game loadFromCSVFile: dataPath
               intoContext: self.managedObjectContext
                     error: NULL];
-    //  TODO: Do I have to refresh? I probably do, unless the object controllers watch the MOC.
 }
 
 - (IBAction) changeName: (id) sender

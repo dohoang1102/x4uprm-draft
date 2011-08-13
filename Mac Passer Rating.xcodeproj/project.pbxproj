@@ -29,7 +29,7 @@
 		3317A9B413EF57A000948520 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		3317A9B513EF57A000948520 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		3317A9B613EF57A000948520 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
-		3318AFAB13E6EFEC0093280C /* Mac Passer Rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mac Passer Rating.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3318AFAB13E6EFEC0093280C /* Passer Rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passer Rating.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3318AFAF13E6EFEC0093280C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3318AFB213E6EFEC0093280C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3318AFB313E6EFEC0093280C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -83,7 +83,7 @@
 		3318AFAC13E6EFEC0093280C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3318AFAB13E6EFEC0093280C /* Mac Passer Rating.app */,
+				3318AFAB13E6EFEC0093280C /* Passer Rating.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 			);
 			name = "Mac Passer Rating";
 			productName = "Mac Passer Rating";
-			productReference = 3318AFAB13E6EFEC0093280C /* Mac Passer Rating.app */;
+			productReference = 3318AFAB13E6EFEC0093280C /* Passer Rating.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -327,7 +327,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/Passers-cxmcnerepomuhchhodfbgdtnuyev/Build/Products/Debug\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Passer Rating";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -343,7 +343,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/Passers-cxmcnerepomuhchhodfbgdtnuyev/Build/Products/Debug\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Passer Rating";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
