@@ -10,68 +10,50 @@
 #import "Game.h"
 #import "rating.h"
 
-#define TWO_LEVEL_FETCH     0
-#define COMPOUND_FETCH      0
-#define ALL_IN_MEMORY       0
-#define NO_CORE_DATA        1
-
-#define LEAK_PASSER_KEY     0
-
 @implementation Passer
 @dynamic firstName;
 @dynamic lastName;
 @dynamic currentTeam;
 @dynamic games;
 
-static NSMutableDictionary *   sAllPassers;
-
-+ (void) initialize
-{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sAllPassers = [[NSMutableDictionary alloc] init];
-    });
-}
-
 + (NSArray *) existingPassersWithLastName: (NSString *) last
 								firstName: (NSString *) first
 								inContext: (NSManagedObjectContext *) moc
 {
-	NSParameterAssert(last && last.length > 0);
-	NSParameterAssert(first && first.length > 0);
+    NSFetchRequest *    fetch = [[NSFetchRequest alloc]
+                                 initWithEntityName: @"Passer"];
+    fetch.predicate = [NSPredicate predicateWithFormat:
+                       @"lastName = %@ AND firstName = %@",
+                       last, first];
+    NSError *           error;
+    NSArray *           result;
+    result = [moc executeFetchRequest: fetch error: &error];
+    if (! result) {
+        NSLog(@"%s - Illegal Passer fetch, error = %@, dict = %@",
+              __PRETTY_FUNCTION__, error, error.userInfo);
+        return nil;
+    }
     
-    NSString *      key = [NSString stringWithFormat: @"%@|%@", last, first];
-    Passer *        passer = [sAllPassers objectForKey: key];
-    NSArray *       result;
-    if (passer)
-        result = [NSArray arrayWithObject: passer];
-    else
-        result = [NSArray array];
-
-	return result;
+    return result;
 }
 
 + (Passer *) passerWithLastName: (NSString *) last 
-                      firstName: (NSString *) first
+                      firstName: (NSString *) first 
                       inContext: (NSManagedObjectContext *) moc
 {
-	NSArray *			result = [self existingPassersWithLastName: last
-                                                 firstName: first
-                                                 inContext: moc];
+	NSArray *		result = [self existingPassersWithLastName: last
+                                                firstName: first
+                                                inContext: moc];
 	if (result.count > 0)
 		return result.lastObject;
 	else {
-		Passer *		retval;
+		Passer *    retval;
 		retval = [NSEntityDescription
 				  insertNewObjectForEntityForName: @"Passer"
                   inManagedObjectContext: moc];
         assert(retval);
 		retval.firstName = first;
 		retval.lastName = last;
-        
-        NSString *      key = [NSString stringWithFormat: @"%@|%@", last, first];
-        [sAllPassers setObject: retval forKey: key];
-		
 		return retval;
 	}
 }
