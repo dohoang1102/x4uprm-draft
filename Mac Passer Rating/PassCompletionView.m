@@ -98,9 +98,7 @@
     [NSBezierPath fillRect: backgroundRect];
     
     CGFloat     pixPerAttempt = maxBarHeight / MAX_ATTEMPTS;
-    NSRange     gameRange = [self cellsInRect: dirtyRect];
-    NSUInteger  lastIndex = MIN(NSMaxRange(gameRange), self.gameCount);
-    for (NSUInteger index = gameRange.location; index < self.gameCount; index++) {
+    for (NSUInteger index = 0; index < self.gameCount; index++) {
         Game *      game = [self.delegate passCompletion: self gameAtIndex: index];
         NSUInteger  stat;
 

@@ -10,17 +10,19 @@
 #import "rating.h"
 #import "Game.h"
 #import "GameViewController.h"
+#import "PasserGraphController.h"
 
 @interface LeagueDocument ()
 @property(strong) NSPopover *   gamePopover;
+@property(strong) NSPopover *   passerPopover;
 @end
 
 @implementation LeagueDocument
 @synthesize teamArrayController;
 @synthesize passerArrayController;
 @synthesize gameArrayController;
-@synthesize gameTable;
-@synthesize gamePopover;
+@synthesize gameTable, passerTable;
+@synthesize gamePopover, passerPopover;
 
 - (id)init
 {
@@ -61,6 +63,9 @@
         [NSArray arrayWithObject:
              [NSSortDescriptor sortDescriptorWithKey: @"whenPlayed" 
                                            ascending: YES]];
+    
+    self.passerTable.doubleAction = @selector(passerTableClicked:);
+    self.passerTable.target = self;
 }
 
 + (BOOL)autosavesInPlace
@@ -97,6 +102,8 @@
         return;
     
     [self.gamePopover performClose: nil];
+    [self.passerPopover performClose: nil];
+    
     GameViewController *    gvc = [[GameViewController alloc] initWithNibName: nil
                                                                        bundle: nil];
     id      aGame = [self.gameArrayController.arrangedObjects objectAtIndex: aRow];
@@ -112,4 +119,24 @@
 {
     [self showPopoverForRow: self.gameTable.clickedRow];
 }
+
+- (IBAction) passerTableClicked: (id) sender
+{
+    NSInteger       row = self.passerTable.clickedRow;
+    if (row >= 0) {
+        [self.gamePopover performClose: nil];
+        [self.passerPopover performClose: nil];
+        
+        PasserGraphController *     pgc = [[PasserGraphController alloc] initWithNibName: @"PasserGraphController" bundle: nil];
+        id      passer = [self.passerArrayController.arrangedObjects objectAtIndex: row];
+        pgc.representedObject = passer;
+        self.passerPopover = [[NSPopover alloc] init];
+        self.passerPopover.contentViewController = pgc;
+        self.passerPopover.behavior = NSPopoverBehaviorTransient;
+        NSRect                  rowRect = [self.passerTable rectOfRow: row];
+        [self.passerPopover showRelativeToRect: rowRect ofView: self.passerTable preferredEdge: NSMaxXEdge];
+    }
+}
+
+
 @end

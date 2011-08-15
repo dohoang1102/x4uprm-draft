@@ -15,6 +15,7 @@
     NSArrayController *passerArrayController;
     NSArrayController *gameArrayController;
     NSTableView *gameTable;
+    NSTableView *passerTable;
 }
 
 
@@ -24,6 +25,8 @@
 @property (strong) IBOutlet NSArrayController *passerArrayController;
 @property (strong) IBOutlet NSArrayController *gameArrayController;
 @property (strong) IBOutlet NSTableView *gameTable;
+@property (strong) IBOutlet NSTableView *passerTable;
 
 - (IBAction) gameTableClicked: (id) sender;
+- (IBAction)passerTableClicked:(id)sender;
 @end
