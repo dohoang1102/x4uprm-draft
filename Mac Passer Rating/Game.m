@@ -36,6 +36,17 @@ static NSDateFormatter *	sShortDate = nil;
     });
 }
 
++ (NSSet *) keyPathsForValuesAffectingPasserRating
+{
+    static NSSet *      sKeySet = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sKeySet = [NSSet setWithObjects: @"touchdowns", @"completions", 
+                   @"yards", @"attempts", @"interceptions", nil];
+    });
+    return sKeySet;
+}
+
 + (BOOL) csvFile: (SimpleCSVFile *) file
 	  readValues: (NSDictionary *) values
 		   error: (NSError **) error;
