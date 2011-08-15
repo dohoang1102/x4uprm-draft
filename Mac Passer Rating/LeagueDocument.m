@@ -47,6 +47,7 @@
         [NSArray arrayWithObject:
              [NSSortDescriptor sortDescriptorWithKey: @"teamName"
                                            ascending: YES]];
+#if 0
     self.passerArrayController.sortDescriptors =
         [NSArray arrayWithObjects:
              [NSSortDescriptor sortDescriptorWithKey: @"lastName" 
@@ -54,6 +55,7 @@
              [NSSortDescriptor sortDescriptorWithKey: @"firstName" 
                                            ascending: YES],
              nil];
+#endif
     
     self.gameArrayController.sortDescriptors =
         [NSArray arrayWithObject:
