@@ -15,7 +15,8 @@
 
 @property(nonatomic, retain) NSString *     teamName;
 @property(nonatomic, retain) NSSet *        games;
-@property(nonatomic, readonly) NSArray *    orderedGames;
+
+@property(nonatomic, readonly) NSSet *      passers;
 @property(nonatomic, readonly) NSArray *    orderedPassers;
 
 @property(nonatomic, readonly) NSUInteger   ownTotalScore;
