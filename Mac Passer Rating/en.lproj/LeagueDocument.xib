@@ -1270,23 +1270,44 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: arrangedObjects.fullName</string>
+						<string key="label">displayPatternValue1: arrangedObjects.firstName</string>
+						<reference key="source" ref="707165458"/>
+						<reference key="destination" ref="283440456"/>
+						<object class="NSNibBindingConnector" key="connector" id="722026107">
+							<reference key="NSSource" ref="707165458"/>
+							<reference key="NSDestination" ref="283440456"/>
+							<string key="NSLabel">displayPatternValue1: arrangedObjects.firstName</string>
+							<string key="NSBinding">displayPatternValue1</string>
+							<string key="NSKeyPath">arrangedObjects.firstName</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSDisplayPattern</string>
+								<string key="NS.object.0">%{value1}@ %{value2}@</string>
+							</object>
+							<int key="NSNibBindingConnectorVersion">2</int>
+						</object>
+					</object>
+					<int key="connectionID">100217</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBBindingConnection" key="connection">
+						<string key="label">displayPatternValue2: arrangedObjects.lastName</string>
 						<reference key="source" ref="707165458"/>
 						<reference key="destination" ref="283440456"/>
 						<object class="NSNibBindingConnector" key="connector">
 							<reference key="NSSource" ref="707165458"/>
 							<reference key="NSDestination" ref="283440456"/>
-							<string key="NSLabel">value: arrangedObjects.fullName</string>
-							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">arrangedObjects.fullName</string>
-							<dictionary key="NSOptions">
-								<boolean value="NO" key="NSAllowsEditingMultipleValuesSelection"/>
-								<boolean value="NO" key="NSConditionallySetsEditable"/>
-							</dictionary>
+							<string key="NSLabel">displayPatternValue2: arrangedObjects.lastName</string>
+							<string key="NSBinding">displayPatternValue2</string>
+							<string key="NSKeyPath">arrangedObjects.lastName</string>
+							<object class="NSDictionary" key="NSOptions">
+								<string key="NS.key.0">NSDisplayPattern</string>
+								<string key="NS.object.0">%{value1}@ %{value2}@</string>
+							</object>
+							<reference key="NSPreviousConnector" ref="722026107"/>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">100103</int>
+					<int key="connectionID">100218</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
@@ -2149,7 +2170,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">100212</int>
+			<int key="maxID">100218</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

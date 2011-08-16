@@ -49,7 +49,6 @@
         [NSArray arrayWithObject:
              [NSSortDescriptor sortDescriptorWithKey: @"teamName"
                                            ascending: YES]];
-#if 0
     self.passerArrayController.sortDescriptors =
         [NSArray arrayWithObjects:
              [NSSortDescriptor sortDescriptorWithKey: @"lastName" 
@@ -57,7 +56,6 @@
              [NSSortDescriptor sortDescriptorWithKey: @"firstName" 
                                            ascending: YES],
              nil];
-#endif
     
     self.gameArrayController.sortDescriptors =
         [NSArray arrayWithObject:
@@ -94,30 +92,29 @@
     }
 }
 
-#pragma mark - NSTableViewDelegate
-
-- (void) showPopoverForRow: (NSInteger) aRow
-{
-    if (aRow < 0)
-        return;
-    
-    [self.gamePopover performClose: nil];
-    [self.passerPopover performClose: nil];
-    
-    GameViewController *    gvc = [[GameViewController alloc] initWithNibName: nil
-                                                                       bundle: nil];
-    id      aGame = [self.gameArrayController.arrangedObjects objectAtIndex: aRow];
-    gvc.representedObject = aGame;
-    self.gamePopover = [[NSPopover alloc] init];
-    self.gamePopover.contentViewController = gvc;
-    self.gamePopover.behavior = NSPopoverBehaviorTransient;
-    NSRect                  rowRect = [self.gameTable rectOfRow: aRow];
-    [self.gamePopover showRelativeToRect: rowRect ofView: self.gameTable preferredEdge: NSMaxXEdge];
-}
-
 - (IBAction) gameTableClicked: (id) sender
 {
-    [self showPopoverForRow: self.gameTable.clickedRow];
+    NSInteger       row = self.gameTable.clickedRow;
+    if (row >= 0) {
+        [self.gamePopover performClose: nil];
+        [self.passerPopover performClose: nil];
+        
+        GameViewController *    gvc =
+        [[GameViewController alloc] initWithNibName: nil
+                                             bundle: nil];
+        id      aGame = [self.gameArrayController.arrangedObjects
+                         objectAtIndex: row];
+        
+        gvc.representedObject = aGame;
+        self.gamePopover = [[NSPopover alloc] init];
+        self.gamePopover.contentViewController = gvc;
+        self.gamePopover.behavior = NSPopoverBehaviorTransient;
+        
+        NSRect  rowRect = [self.gameTable rectOfRow: row];
+        [self.gamePopover showRelativeToRect: rowRect 
+                                      ofView: self.gameTable
+                               preferredEdge: NSMaxXEdge];
+    }
 }
 
 - (IBAction) passerTableClicked: (id) sender
