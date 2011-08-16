@@ -7,7 +7,6 @@
 //
 
 #import "PasserGraphController.h"
-#import "Game.h"
 #import "Passer.h"
 
 @interface PasserGraphController ()
@@ -17,16 +16,6 @@
 @implementation PasserGraphController
 
 @synthesize gameArray, completionView;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Initialization code here.
-    }
-    
-    return self;
-}
 
 - (void) awakeFromNib
 {
