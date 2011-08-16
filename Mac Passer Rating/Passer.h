@@ -21,7 +21,6 @@
 @property (nonatomic, retain) NSString * currentTeam;
 @property (nonatomic, retain) NSSet *games;
 
-@property(nonatomic, readonly, retain) NSString *   fullName;
 @property (nonatomic, readonly, retain) NSNumber *	passerRating;
 @property (nonatomic, readonly, retain) NSNumber *	attempts;
 @property (nonatomic, readonly, retain) NSNumber *	completions;

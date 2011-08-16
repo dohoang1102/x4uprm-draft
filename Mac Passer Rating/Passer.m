@@ -79,12 +79,6 @@
         return passers;
 }
 
-- (NSString *) fullName
-{
-    return [NSString stringWithFormat: @"%@ %@",
-            self.firstName, self.lastName];
-}
-
 - (NSNumber *) passerRating
 {
 	int	attempts = [[self.games valueForKeyPath: @"@sum.attempts"] intValue];
