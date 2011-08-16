@@ -9,7 +9,6 @@
 #import "LeagueDocument.h"
 #import "rating.h"
 #import "Game.h"
-#import "GameViewController.h"
 #import "PasserGraphController.h"
 
 @interface LeagueDocument ()
@@ -99,9 +98,9 @@
         [self.gamePopover performClose: nil];
         [self.passerPopover performClose: nil];
         
-        GameViewController *    gvc =
-        [[GameViewController alloc] initWithNibName: nil
-                                             bundle: nil];
+        NSViewController *    gvc = 
+                [[NSViewController alloc] initWithNibName: @"GameViewController" 
+                                                   bundle: nil];
         id      aGame = [self.gameArrayController.arrangedObjects
                          objectAtIndex: row];
         

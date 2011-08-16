@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3317A9B713EF57A000948520 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3317A9B513EF57A000948520 /* GameViewController.m */; };
 		3317A9B813EF57A000948520 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3317A9B613EF57A000948520 /* GameViewController.xib */; };
 		3318AFB013E6EFEC0093280C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3318AFAF13E6EFEC0093280C /* Cocoa.framework */; };
 		3318AFBA13E6EFEC0093280C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFB813E6EFEC0093280C /* InfoPlist.strings */; };
@@ -29,8 +28,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3317A9B413EF57A000948520 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		3317A9B513EF57A000948520 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		3317A9B613EF57A000948520 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		3318AFAB13E6EFEC0093280C /* Passer Rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passer Rating.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3318AFAF13E6EFEC0093280C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -162,8 +159,6 @@
 		3396FA7813F9877B00EEC4B5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3317A9B413EF57A000948520 /* GameViewController.h */,
-				3317A9B513EF57A000948520 /* GameViewController.m */,
 				3317A9B613EF57A000948520 /* GameViewController.xib */,
 				3396FA7D13F9945B00EEC4B5 /* PasserGraphController.h */,
 				3396FA7E13F9945B00EEC4B5 /* PasserGraphController.m */,
@@ -249,7 +244,6 @@
 				33965CE413E73410008F552D /* SimpleCSVFile.m in Sources */,
 				33965CE713E73801008F552D /* Team.m in Sources */,
 				33965CF113EDD62D008F552D /* LeagueDocument.xcdatamodeld in Sources */,
-				3317A9B713EF57A000948520 /* GameViewController.m in Sources */,
 				3396FA7C13F989B500EEC4B5 /* PassCompletionView.m in Sources */,
 				3396FA8013F9945B00EEC4B5 /* PasserGraphController.m in Sources */,
 			);

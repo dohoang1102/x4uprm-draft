@@ -28,7 +28,7 @@
 		</object>
 		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1000">
 			<object class="NSCustomObject" id="1001">
-				<string key="NSClassName">GameViewController</string>
+				<string key="NSClassName">NSViewController</string>
 			</object>
 			<object class="NSCustomObject" id="1003">
 				<string key="NSClassName">FirstResponder</string>
@@ -672,86 +672,6 @@
 					<int key="connectionID">2</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">objectController</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="442386476"/>
-					</object>
-					<int key="connectionID">4</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">ourTeamLabel</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="790874360"/>
-					</object>
-					<int key="connectionID">37</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">theirTeamLabel</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="654949525"/>
-					</object>
-					<int key="connectionID">38</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">ourScoreLabel</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="1027361475"/>
-					</object>
-					<int key="connectionID">39</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">theirScoreLabel</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="569390537"/>
-					</object>
-					<int key="connectionID">40</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">attemptsLabel</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="568716619"/>
-					</object>
-					<int key="connectionID">85</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">completionsLabel</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="617753567"/>
-					</object>
-					<int key="connectionID">86</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">yardsLabel</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="302103552"/>
-					</object>
-					<int key="connectionID">91</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">touchdownsLabel</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="610562949"/>
-					</object>
-					<int key="connectionID">92</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">interceptionsLabel</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="640109741"/>
-					</object>
-					<int key="connectionID">93</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">contentObject: representedObject</string>
 						<reference key="source" ref="442386476"/>
@@ -1339,72 +1259,7 @@
 			<nil key="sourceID"/>
 			<int key="maxID">120</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">GameViewController</string>
-					<string key="superclassName">NSViewController</string>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="attemptsLabel">NSTextField</string>
-						<string key="completionsLabel">NSTextField</string>
-						<string key="interceptionsLabel">NSTextField</string>
-						<string key="objectController">NSObjectController</string>
-						<string key="ourScoreLabel">NSTextField</string>
-						<string key="ourTeamLabel">NSTextField</string>
-						<string key="theirScoreLabel">NSTextField</string>
-						<string key="theirTeamLabel">NSTextField</string>
-						<string key="touchdownsLabel">NSTextField</string>
-						<string key="yardsLabel">NSTextField</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="attemptsLabel">
-							<string key="name">attemptsLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="completionsLabel">
-							<string key="name">completionsLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="interceptionsLabel">
-							<string key="name">interceptionsLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="objectController">
-							<string key="name">objectController</string>
-							<string key="candidateClassName">NSObjectController</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="ourScoreLabel">
-							<string key="name">ourScoreLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="ourTeamLabel">
-							<string key="name">ourTeamLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="theirScoreLabel">
-							<string key="name">theirScoreLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="theirTeamLabel">
-							<string key="name">theirTeamLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="touchdownsLabel">
-							<string key="name">touchdownsLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="yardsLabel">
-							<string key="name">yardsLabel</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/GameViewController.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">
