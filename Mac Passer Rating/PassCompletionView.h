@@ -22,14 +22,16 @@
 
 @property(nonatomic, assign) IBOutlet id<PassCompletionDelegate>  delegate;
 
-@property(nonatomic, assign) IBOutlet CGFloat        cellWidth;
-@property(nonatomic, assign) IBOutlet NSUInteger     attRed;
-@property(nonatomic, assign) IBOutlet NSUInteger     attGreen;
-@property(nonatomic, assign) IBOutlet NSUInteger     attBlue;
-@property(nonatomic, assign) IBOutlet NSUInteger     compGreen;
-@property(nonatomic, assign) IBOutlet NSUInteger     compRed;
-@property(nonatomic, assign) IBOutlet NSUInteger     compBlue;
+@property(nonatomic, assign) CGFloat        cellWidth;
+@property(nonatomic, assign) NSUInteger     attRed;
+@property(nonatomic, assign) NSUInteger     attGreen;
+@property(nonatomic, assign) NSUInteger     attBlue;
+@property(strong) NSColor *                 attColor;
+@property(nonatomic, assign) NSUInteger     compGreen;
+@property(nonatomic, assign) NSUInteger     compRed;
+@property(nonatomic, assign) NSUInteger     compBlue;
+@property(strong) NSColor *                 compColor;
 
-@property(nonatomic, assign) NSUInteger              gameCount;
+@property(nonatomic, assign) NSUInteger     gameCount;
 
 @end
