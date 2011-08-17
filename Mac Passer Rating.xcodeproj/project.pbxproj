@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3311231013FC224D008DD555 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFBB13E6EFEC0093280C /* main.m */; };
 		3317A9B813EF57A000948520 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3317A9B613EF57A000948520 /* GameViewController.xib */; };
 		3318AFB013E6EFEC0093280C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3318AFAF13E6EFEC0093280C /* Cocoa.framework */; };
 		3318AFBA13E6EFEC0093280C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFB813E6EFEC0093280C /* InfoPlist.strings */; };
-		3318AFBC13E6EFEC0093280C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFBB13E6EFEC0093280C /* main.m */; };
-		3318AFC013E6EFEC0093280C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFBE13E6EFEC0093280C /* Credits.rtf */; };
 		3318AFC313E6EFEC0093280C /* LeagueDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFC213E6EFEC0093280C /* LeagueDocument.m */; };
 		3318AFC613E6EFEC0093280C /* LeagueDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFC413E6EFEC0093280C /* LeagueDocument.xib */; };
 		3318AFC913E6EFED0093280C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFC713E6EFED0093280C /* MainMenu.xib */; };
+		3343002813FC1F7E006E7361 /* sample-data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33965CE813E74A99008F552D /* sample-data.csv */; };
+		3343002913FC1F7E006E7361 /* Mac Passer Rating.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFFE13E6F2170093280C /* Mac Passer Rating.entitlements */; };
 		3394335713E707B90000091C /* libpasser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3394335613E707B90000091C /* libpasser.a */; };
 		33965CE013E733EA008F552D /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 33965CDD13E733EA008F552D /* Game.m */; };
 		33965CE113E733EA008F552D /* Passer.m in Sources */ = {isa = PBXBuildFile; fileRef = 33965CDF13E733EA008F552D /* Passer.m */; };
 		33965CE413E73410008F552D /* SimpleCSVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 33965CE313E73410008F552D /* SimpleCSVFile.m */; };
 		33965CE713E73801008F552D /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 33965CE613E73801008F552D /* Team.m */; };
-		33965CE913E74A99008F552D /* sample-data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 33965CE813E74A99008F552D /* sample-data.csv */; };
 		33965CF113EDD62D008F552D /* LeagueDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 33965CEF13EDD62D008F552D /* LeagueDocument.xcdatamodeld */; };
 		3396FA7C13F989B500EEC4B5 /* PassCompletionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3396FA7B13F989B500EEC4B5 /* PassCompletionView.m */; };
 		3396FA8013F9945B00EEC4B5 /* PasserGraphController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3396FA7E13F9945B00EEC4B5 /* PasserGraphController.m */; };
@@ -28,22 +28,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3311230B13FC224D008DD555 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "fr-CA"; path = "fr-CA.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 		3317A9B613EF57A000948520 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		3318AFAB13E6EFEC0093280C /* Passer Rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passer Rating.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3318AFAF13E6EFEC0093280C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3318AFB213E6EFEC0093280C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		3318AFB313E6EFEC0093280C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3318AFB413E6EFEC0093280C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3318AFB713E6EFEC0093280C /* Mac Passer Rating-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mac Passer Rating-Info.plist"; sourceTree = "<group>"; };
+		3318AFB713E6EFEC0093280C /* Mac Passer Rating-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Mac Passer Rating-Info.plist"; sourceTree = "<group>"; };
 		3318AFB913E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3318AFBB13E6EFEC0093280C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3318AFBD13E6EFEC0093280C /* Mac Passer Rating-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mac Passer Rating-Prefix.pch"; sourceTree = "<group>"; };
+		3318AFBB13E6EFEC0093280C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3318AFBD13E6EFEC0093280C /* Mac Passer Rating-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Mac Passer Rating-Prefix.pch"; sourceTree = "<group>"; };
 		3318AFBF13E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		3318AFC113E6EFEC0093280C /* LeagueDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeagueDocument.h; sourceTree = "<group>"; };
 		3318AFC213E6EFEC0093280C /* LeagueDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeagueDocument.m; sourceTree = "<group>"; };
 		3318AFC513E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LeagueDocument.xib; sourceTree = "<group>"; };
 		3318AFC813E6EFED0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		3318AFFE13E6F2170093280C /* Mac Passer Rating.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Mac Passer Rating.entitlements"; sourceTree = "<group>"; };
+		3318AFFE13E6F2170093280C /* Mac Passer Rating.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Mac Passer Rating.entitlements"; sourceTree = "<group>"; };
 		3343002513FBFC8C006E7361 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "fr-CA"; path = "fr-CA.lproj/Credits.rtf"; sourceTree = "<group>"; };
 		3394335613E707B90000091C /* libpasser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpasser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		33965CDC13E733EA008F552D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
@@ -223,12 +224,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3318AFBA13E6EFEC0093280C /* InfoPlist.strings in Resources */,
-				3318AFC013E6EFEC0093280C /* Credits.rtf in Resources */,
 				3318AFC613E6EFEC0093280C /* LeagueDocument.xib in Resources */,
 				3318AFC913E6EFED0093280C /* MainMenu.xib in Resources */,
-				33965CE913E74A99008F552D /* sample-data.csv in Resources */,
 				3317A9B813EF57A000948520 /* GameViewController.xib in Resources */,
 				3396FA8113F9945B00EEC4B5 /* PasserGraphController.xib in Resources */,
+				3343002813FC1F7E006E7361 /* sample-data.csv in Resources */,
+				3343002913FC1F7E006E7361 /* Mac Passer Rating.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +240,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3318AFBC13E6EFEC0093280C /* main.m in Sources */,
 				3318AFC313E6EFEC0093280C /* LeagueDocument.m in Sources */,
 				33965CE013E733EA008F552D /* Game.m in Sources */,
 				33965CE113E733EA008F552D /* Passer.m in Sources */,
@@ -248,6 +248,7 @@
 				33965CF113EDD62D008F552D /* LeagueDocument.xcdatamodeld in Sources */,
 				3396FA7C13F989B500EEC4B5 /* PassCompletionView.m in Sources */,
 				3396FA8013F9945B00EEC4B5 /* PasserGraphController.m in Sources */,
+				3311231013FC224D008DD555 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +284,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3318AFC813E6EFED0093280C /* en */,
+				3311230B13FC224D008DD555 /* fr-CA */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
