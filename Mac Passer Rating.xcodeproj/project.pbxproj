@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3311231013FC224D008DD555 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFBB13E6EFEC0093280C /* main.m */; };
 		3311231313FC42A8008DD555 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFC713E6EFED0093280C /* MainMenu.xib */; };
-		3317A9B813EF57A000948520 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3317A9B613EF57A000948520 /* GameViewController.xib */; };
 		3318AFB013E6EFEC0093280C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3318AFAF13E6EFEC0093280C /* Cocoa.framework */; };
 		3318AFBA13E6EFEC0093280C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFB813E6EFEC0093280C /* InfoPlist.strings */; };
 		3318AFC313E6EFEC0093280C /* LeagueDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3318AFC213E6EFEC0093280C /* LeagueDocument.m */; };
@@ -26,12 +25,13 @@
 		3396FA7C13F989B500EEC4B5 /* PassCompletionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3396FA7B13F989B500EEC4B5 /* PassCompletionView.m */; };
 		3396FA8013F9945B00EEC4B5 /* PasserGraphController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3396FA7E13F9945B00EEC4B5 /* PasserGraphController.m */; };
 		3396FA8113F9945B00EEC4B5 /* PasserGraphController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3396FA7F13F9945B00EEC4B5 /* PasserGraphController.xib */; };
+		33B1281313FC5A6A00D07154 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B1281113FC5A6A00D07154 /* GameViewController.xib */; };
+		33B1281713FC604100D07154 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFBE13E6EFEC0093280C /* Credits.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3311230B13FC224D008DD555 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "fr-CA"; path = "fr-CA.lproj/MainMenu.xib"; sourceTree = "<group>"; };
 		3311231213FC42A8008DD555 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "fr-CA"; path = "fr-CA.lproj/LeagueDocument.xib"; sourceTree = "<group>"; };
-		3317A9B613EF57A000948520 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameViewController.xib; path = en.lproj/GameViewController.xib; sourceTree = "<group>"; };
 		3318AFAB13E6EFEC0093280C /* Passer Rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Passer Rating.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3318AFAF13E6EFEC0093280C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3318AFB213E6EFEC0093280C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -64,6 +64,9 @@
 		3396FA7D13F9945B00EEC4B5 /* PasserGraphController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasserGraphController.h; sourceTree = "<group>"; };
 		3396FA7E13F9945B00EEC4B5 /* PasserGraphController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasserGraphController.m; sourceTree = "<group>"; };
 		3396FA7F13F9945B00EEC4B5 /* PasserGraphController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PasserGraphController.xib; sourceTree = "<group>"; };
+		33B1281213FC5A6A00D07154 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "fr-CA"; path = "fr-CA.lproj/GameViewController.xib"; sourceTree = "<group>"; };
+		33B1281513FC5AAC00D07154 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameViewController.xib; sourceTree = "<group>"; };
+		33B1281613FC5F4000D07154 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +166,7 @@
 		3396FA7813F9877B00EEC4B5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3317A9B613EF57A000948520 /* GameViewController.xib */,
+				33B1281113FC5A6A00D07154 /* GameViewController.xib */,
 				3396FA7D13F9945B00EEC4B5 /* PasserGraphController.h */,
 				3396FA7E13F9945B00EEC4B5 /* PasserGraphController.m */,
 				3396FA7F13F9945B00EEC4B5 /* PasserGraphController.xib */,
@@ -228,11 +231,12 @@
 				3318AFBA13E6EFEC0093280C /* InfoPlist.strings in Resources */,
 				3318AFC613E6EFEC0093280C /* LeagueDocument.xib in Resources */,
 				3318AFC913E6EFED0093280C /* MainMenu.xib in Resources */,
-				3317A9B813EF57A000948520 /* GameViewController.xib in Resources */,
 				3396FA8113F9945B00EEC4B5 /* PasserGraphController.xib in Resources */,
 				3343002813FC1F7E006E7361 /* sample-data.csv in Resources */,
 				3343002913FC1F7E006E7361 /* Mac Passer Rating.entitlements in Resources */,
 				3311231313FC42A8008DD555 /* MainMenu.xib in Resources */,
+				33B1281313FC5A6A00D07154 /* GameViewController.xib in Resources */,
+				33B1281713FC604100D07154 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +266,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3318AFB913E6EFEC0093280C /* en */,
+				33B1281613FC5F4000D07154 /* fr-CA */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -291,6 +296,15 @@
 				3311230B13FC224D008DD555 /* fr-CA */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		33B1281113FC5A6A00D07154 /* GameViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33B1281213FC5A6A00D07154 /* fr-CA */,
+				33B1281513FC5AAC00D07154 /* en */,
+			);
+			name = GameViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
