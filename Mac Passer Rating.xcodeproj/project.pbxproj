@@ -44,6 +44,7 @@
 		3318AFC513E6EFEC0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LeagueDocument.xib; sourceTree = "<group>"; };
 		3318AFC813E6EFED0093280C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3318AFFE13E6F2170093280C /* Mac Passer Rating.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Mac Passer Rating.entitlements"; sourceTree = "<group>"; };
+		3343002513FBFC8C006E7361 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "fr-CA"; path = "fr-CA.lproj/Credits.rtf"; sourceTree = "<group>"; };
 		3394335613E707B90000091C /* libpasser.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpasser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		33965CDC13E733EA008F552D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		33965CDD13E733EA008F552D /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
@@ -204,6 +205,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"fr-CA",
 			);
 			mainGroup = 3318AFA013E6EFEC0093280C;
 			productRefGroup = 3318AFAC13E6EFEC0093280C /* Products */;
@@ -264,6 +266,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3318AFBF13E6EFEC0093280C /* en */,
+				3343002513FBFC8C006E7361 /* fr-CA */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
