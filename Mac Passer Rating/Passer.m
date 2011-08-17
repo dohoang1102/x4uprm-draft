@@ -29,6 +29,8 @@
     NSArray *           result;
     result = [moc executeFetchRequest: fetch error: &error];
     if (! result) {
+        //  FIXME: This would be a candidate for localization,
+        //  but it is never user-visible.
         NSLog(@"%s - Illegal Passer fetch, error = %@, dict = %@",
               __PRETTY_FUNCTION__, error, error.userInfo);
         return nil;
@@ -68,6 +70,8 @@
 	NSArray *		passers = [moc executeFetchRequest: req
                                              error: &error];
 	if (! passers) {
+        //  FIXME: This would be a candidate for localization,
+        //  but it is never user-visible.
 		NSLog(@"%s: Error = %@", __PRETTY_FUNCTION__, error);
 		NSLog(@"%s: userDict = %@", __PRETTY_FUNCTION__, [error userInfo]);
 		return nil;

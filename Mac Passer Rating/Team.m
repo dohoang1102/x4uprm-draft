@@ -27,6 +27,8 @@
     NSArray *           result;
     result = [moc executeFetchRequest: fetch error: &error];
     if (! result) {
+        //  FIXME: This would be a candidate for localization,
+        //  but it is never user-visible.
          NSLog(@"%s: Bad query for Team %@, %@", __PRETTY_FUNCTION__, error, [error userInfo]);
         return nil;
     }

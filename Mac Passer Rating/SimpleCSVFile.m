@@ -95,6 +95,8 @@ NSString * const		kCSVActualFieldsKey = @"kCSVActualFieldsKey";
                     //	expected, and actual field counts. 
                     if (error) {
                         NSString *		localizedDescription = 
+                        //  FIXME: This would be a candidate for localization,
+                        //  but it is never user-visible.
                         [NSString stringWithFormat:
                          @"%@:%d: Expected %d fields, got %d.",
                          self.path, lineCount, self.headers.count, fields.count];

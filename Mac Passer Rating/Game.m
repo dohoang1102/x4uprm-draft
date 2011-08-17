@@ -161,6 +161,8 @@ static NSDateFormatter *	sShortDate = nil;
         NSMutableDictionary *	temp = [NSMutableDictionary	dictionary];
 		for (NSString * key in [self numericAttributes])
 			[temp setObject: @"0" forKey: key];
+        //  FIXME: This is a candidate for string localization,
+        //  though it's problematic, because I never use this method.
 		[temp setObject: @"Opponents" forKey: @"theirTeam"];
 		[temp setObject: @"Our Team" forKey: @"ourTeam"];
 		[temp setObject: [sShortDate stringFromDate: [NSDate date]]
