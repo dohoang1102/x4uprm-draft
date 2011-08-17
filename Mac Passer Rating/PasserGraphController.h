@@ -9,8 +9,6 @@
 #import <Cocoa/Cocoa.h>
 #import "PassCompletionView.h"
 
-@class Game;
-
 @interface PasserGraphController : NSViewController
 <PassCompletionDelegate>
 

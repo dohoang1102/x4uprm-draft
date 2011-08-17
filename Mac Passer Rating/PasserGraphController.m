@@ -9,6 +9,8 @@
 #import "PasserGraphController.h"
 #import "Passer.h"
 
+@class Game;
+
 @interface PasserGraphController ()
 @property(nonatomic, strong) NSArray *  gameArray;
 @end
