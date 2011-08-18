@@ -9,6 +9,10 @@
 #import "Team.h"
 #import "Game.h"
 
+@interface Team ()
+- (void) setPrimitiveTeamName: (NSString *) newTeamName;
+@end
+
 @implementation Team
 
 @dynamic teamName;
@@ -45,6 +49,29 @@
     assert(retval);
     retval.teamName = aName;
     return retval;
+}
+
+- (void) setTeamName: (NSString *) teamName
+{
+    NSArray *       words = [teamName componentsSeparatedByString: @" "];
+    NSString *      firstOfTeam = [[words lastObject] substringToIndex: 1];
+    NSString *      firstOfCity = [teamName substringToIndex: 1];
+    if (! [firstOfCity isEqualToString: firstOfTeam]) {
+        NSAlert *   alert =
+            [NSAlert alertWithMessageText: @"Illegal team name"
+                            defaultButton: nil  //  Autolocalized
+                          alternateButton: nil otherButton: nil
+                informativeTextWithFormat: 
+             @"\"%@\" must be the first letter of the team name, not \"%@\"",
+             firstOfCity, firstOfTeam];
+        alert.alertStyle = NSCriticalAlertStyle;
+        [alert runModal];
+        return;
+    }
+    
+    [self willChangeValueForKey: @"teamName"];
+    [self setPrimitiveTeamName: teamName];
+    [self didChangeValueForKey: @"teamName"];
 }
 
 - (NSUInteger) ownTotalScore
