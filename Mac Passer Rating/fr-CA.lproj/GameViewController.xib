@@ -619,7 +619,9 @@
 							<object class="NSDateFormatter" key="NSFormatter" id="142958689">
 								<dictionary class="NSMutableDictionary" key="NS.attributes">
 									<integer value="4" key="dateStyle"/>
+									<boolean value="NO" key="doesRelativeDateFormatting"/>
 									<integer value="1040" key="formatterBehavior"/>
+									<integer value="0" key="timeStyle"/>
 								</dictionary>
 								<string key="NS.format">EEEE, d MMMM y</string>
 								<bool key="NS.natural">NO</bool>
