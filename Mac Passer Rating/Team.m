@@ -9,7 +9,7 @@
 #import "Team.h"
 #import "Game.h"
 
-@interface Team ()
+@interface Team (CoreDataImplicit)
 - (void) setPrimitiveTeamName: (NSString *) newTeamName;
 @end
 
@@ -51,6 +51,7 @@
     return retval;
 }
 
+#if 0
 - (void) setTeamName: (NSString *) teamName
 {
     NSArray *       words = [teamName componentsSeparatedByString: @" "];
@@ -58,11 +59,18 @@
     NSString *      firstOfCity = [teamName substringToIndex: 1];
     if (! [firstOfCity isEqualToString: firstOfTeam]) {
         NSAlert *   alert =
-            [NSAlert alertWithMessageText: @"Illegal team name"
+            [NSAlert alertWithMessageText:
+             NSLocalizedString(@"Illegal team name",
+                               @"alert title for non-aliterative team name")
+             
                             defaultButton: nil  //  Autolocalized
                           alternateButton: nil otherButton: nil
+             
                 informativeTextWithFormat: 
-             @"\"%@\" must be the first letter of the team name, not \"%@\"",
+             NSLocalizedString(@"\"%@\" must be the first letter of the "
+                                    "team name, not \"%@\"",
+                               @"alert format for non-aliterative team name"),
+             
              firstOfCity, firstOfTeam];
         alert.alertStyle = NSCriticalAlertStyle;
         [alert runModal];
@@ -73,6 +81,7 @@
     [self setPrimitiveTeamName: teamName];
     [self didChangeValueForKey: @"teamName"];
 }
+#endif
 
 - (NSUInteger) ownTotalScore
 {

@@ -27,6 +27,7 @@
 		3396FA8113F9945B00EEC4B5 /* PasserGraphController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3396FA7F13F9945B00EEC4B5 /* PasserGraphController.xib */; };
 		33B1281313FC5A6A00D07154 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33B1281113FC5A6A00D07154 /* GameViewController.xib */; };
 		33B1281713FC604100D07154 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3318AFBE13E6EFEC0093280C /* Credits.rtf */; };
+		33B1281A13FD6D4B00D07154 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 33B1281813FD6D4B00D07154 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,8 @@
 		33B1281213FC5A6A00D07154 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "fr-CA"; path = "fr-CA.lproj/GameViewController.xib"; sourceTree = "<group>"; };
 		33B1281513FC5AAC00D07154 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GameViewController.xib; sourceTree = "<group>"; };
 		33B1281613FC5F4000D07154 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		33B1281913FD6D4B00D07154 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		33B1281B13FD6D7000D07154 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,7 @@
 		3318AFB613E6EFEC0093280C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				33B1281813FD6D4B00D07154 /* Localizable.strings */,
 				33965CE813E74A99008F552D /* sample-data.csv */,
 				3318AFFE13E6F2170093280C /* Mac Passer Rating.entitlements */,
 				3318AFB713E6EFEC0093280C /* Mac Passer Rating-Info.plist */,
@@ -237,6 +241,7 @@
 				3311231313FC42A8008DD555 /* MainMenu.xib in Resources */,
 				33B1281313FC5A6A00D07154 /* GameViewController.xib in Resources */,
 				33B1281713FC604100D07154 /* Credits.rtf in Resources */,
+				33B1281A13FD6D4B00D07154 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +310,15 @@
 				33B1281513FC5AAC00D07154 /* en */,
 			);
 			name = GameViewController.xib;
+			sourceTree = "<group>";
+		};
+		33B1281813FD6D4B00D07154 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33B1281913FD6D4B00D07154 /* en */,
+				33B1281B13FD6D7000D07154 /* fr-CA */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
